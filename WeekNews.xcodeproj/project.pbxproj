@@ -30,6 +30,18 @@
 		84E385B81CCB696800D36324 /* FxGetColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385B71CCB696800D36324 /* FxGetColumn.m */; };
 		84E385BB1CCB697700D36324 /* FxGetNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385BA1CCB697700D36324 /* FxGetNews.m */; };
 		84E385BE1CCB6BF400D36324 /* AdvertPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385BD1CCB6BF400D36324 /* AdvertPage.m */; };
+		84E385C11CCB6D4E00D36324 /* NewsPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385C01CCB6D4E00D36324 /* NewsPage.m */; };
+		84E385C41CCB6D8700D36324 /* FavoritePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385C31CCB6D8700D36324 /* FavoritePage.m */; };
+		84E385C71CCB6D9D00D36324 /* MyPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385C61CCB6D9D00D36324 /* MyPage.m */; };
+		84E385CA1CCB6DD900D36324 /* DetailPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385C91CCB6DD900D36324 /* DetailPage.m */; };
+		84E385CD1CCB6E2400D36324 /* FxBaseWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385CC1CCB6E2400D36324 /* FxBaseWidget.m */; };
+		84E385D01CCB6E7C00D36324 /* FxTableWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385CF1CCB6E7C00D36324 /* FxTableWidget.m */; };
+		84E385D31CCB6EC500D36324 /* ColumnBarWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385D21CCB6EC500D36324 /* ColumnBarWidget.m */; };
+		84E385D61CCB6EE300D36324 /* NewsWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385D51CCB6EE300D36324 /* NewsWidget.m */; };
+		84E385D91CCB6F3400D36324 /* FavoriteWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385D81CCB6F3400D36324 /* FavoriteWidget.m */; };
+		84E385DC1CCB6FCA00D36324 /* FxBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385DB1CCB6FCA00D36324 /* FxBaseCell.m */; };
+		84E385DF1CCB700C00D36324 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385DE1CCB700C00D36324 /* NewsCell.m */; };
+		84E385E21CCB701A00D36324 /* FavoriteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385E11CCB701A00D36324 /* FavoriteCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +113,30 @@
 		84E385BA1CCB697700D36324 /* FxGetNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxGetNews.m; sourceTree = "<group>"; };
 		84E385BC1CCB6BF400D36324 /* AdvertPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertPage.h; sourceTree = "<group>"; };
 		84E385BD1CCB6BF400D36324 /* AdvertPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertPage.m; sourceTree = "<group>"; };
+		84E385BF1CCB6D4E00D36324 /* NewsPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsPage.h; sourceTree = "<group>"; };
+		84E385C01CCB6D4E00D36324 /* NewsPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsPage.m; sourceTree = "<group>"; };
+		84E385C21CCB6D8700D36324 /* FavoritePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritePage.h; sourceTree = "<group>"; };
+		84E385C31CCB6D8700D36324 /* FavoritePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritePage.m; sourceTree = "<group>"; };
+		84E385C51CCB6D9D00D36324 /* MyPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPage.h; sourceTree = "<group>"; };
+		84E385C61CCB6D9D00D36324 /* MyPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPage.m; sourceTree = "<group>"; };
+		84E385C81CCB6DD900D36324 /* DetailPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPage.h; sourceTree = "<group>"; };
+		84E385C91CCB6DD900D36324 /* DetailPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPage.m; sourceTree = "<group>"; };
+		84E385CB1CCB6E2400D36324 /* FxBaseWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxBaseWidget.h; sourceTree = "<group>"; };
+		84E385CC1CCB6E2400D36324 /* FxBaseWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxBaseWidget.m; sourceTree = "<group>"; };
+		84E385CE1CCB6E7C00D36324 /* FxTableWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxTableWidget.h; sourceTree = "<group>"; };
+		84E385CF1CCB6E7C00D36324 /* FxTableWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxTableWidget.m; sourceTree = "<group>"; };
+		84E385D11CCB6EC500D36324 /* ColumnBarWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnBarWidget.h; sourceTree = "<group>"; };
+		84E385D21CCB6EC500D36324 /* ColumnBarWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnBarWidget.m; sourceTree = "<group>"; };
+		84E385D41CCB6EE300D36324 /* NewsWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsWidget.h; sourceTree = "<group>"; };
+		84E385D51CCB6EE300D36324 /* NewsWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsWidget.m; sourceTree = "<group>"; };
+		84E385D71CCB6F3400D36324 /* FavoriteWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteWidget.h; sourceTree = "<group>"; };
+		84E385D81CCB6F3400D36324 /* FavoriteWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteWidget.m; sourceTree = "<group>"; };
+		84E385DA1CCB6FCA00D36324 /* FxBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxBaseCell.h; sourceTree = "<group>"; };
+		84E385DB1CCB6FCA00D36324 /* FxBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxBaseCell.m; sourceTree = "<group>"; };
+		84E385DD1CCB700C00D36324 /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		84E385DE1CCB700C00D36324 /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		84E385E01CCB701A00D36324 /* FavoriteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteCell.h; sourceTree = "<group>"; };
+		84E385E11CCB701A00D36324 /* FavoriteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +325,14 @@
 				84E385BD1CCB6BF400D36324 /* AdvertPage.m */,
 				84E385261CCB3B6600D36324 /* HomePage.h */,
 				84E385271CCB3B6600D36324 /* HomePage.m */,
+				84E385BF1CCB6D4E00D36324 /* NewsPage.h */,
+				84E385C01CCB6D4E00D36324 /* NewsPage.m */,
+				84E385C21CCB6D8700D36324 /* FavoritePage.h */,
+				84E385C31CCB6D8700D36324 /* FavoritePage.m */,
+				84E385C51CCB6D9D00D36324 /* MyPage.h */,
+				84E385C61CCB6D9D00D36324 /* MyPage.m */,
+				84E385C81CCB6DD900D36324 /* DetailPage.h */,
+				84E385C91CCB6DD900D36324 /* DetailPage.m */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -296,6 +340,16 @@
 		84E3855F1CCB3D4600D36324 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				84E385CB1CCB6E2400D36324 /* FxBaseWidget.h */,
+				84E385CC1CCB6E2400D36324 /* FxBaseWidget.m */,
+				84E385CE1CCB6E7C00D36324 /* FxTableWidget.h */,
+				84E385CF1CCB6E7C00D36324 /* FxTableWidget.m */,
+				84E385D11CCB6EC500D36324 /* ColumnBarWidget.h */,
+				84E385D21CCB6EC500D36324 /* ColumnBarWidget.m */,
+				84E385D41CCB6EE300D36324 /* NewsWidget.h */,
+				84E385D51CCB6EE300D36324 /* NewsWidget.m */,
+				84E385D71CCB6F3400D36324 /* FavoriteWidget.h */,
+				84E385D81CCB6F3400D36324 /* FavoriteWidget.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -303,6 +357,12 @@
 		84E385601CCB3D5200D36324 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				84E385DA1CCB6FCA00D36324 /* FxBaseCell.h */,
+				84E385DB1CCB6FCA00D36324 /* FxBaseCell.m */,
+				84E385DD1CCB700C00D36324 /* NewsCell.h */,
+				84E385DE1CCB700C00D36324 /* NewsCell.m */,
+				84E385E01CCB701A00D36324 /* FavoriteCell.h */,
+				84E385E11CCB701A00D36324 /* FavoriteCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -489,22 +549,34 @@
 				84E3858E1CCB5D0200D36324 /* FxBaseController.m in Sources */,
 				84E385861CCB591C00D36324 /* AdvertInfo.m in Sources */,
 				84E385AD1CCB602000D36324 /* FxJsonParser.m in Sources */,
+				84E385C11CCB6D4E00D36324 /* NewsPage.m in Sources */,
 				84E385281CCB3B6600D36324 /* HomePage.m in Sources */,
 				84E385871CCB591C00D36324 /* BaseInfo.m in Sources */,
+				84E385CD1CCB6E2400D36324 /* FxBaseWidget.m in Sources */,
+				84E385D01CCB6E7C00D36324 /* FxTableWidget.m in Sources */,
+				84E385DF1CCB700C00D36324 /* NewsCell.m in Sources */,
 				84E385791CCB4DC400D36324 /* FxBasePage.m in Sources */,
 				84E385AE1CCB602000D36324 /* FxJsonUtility.m in Sources */,
 				84E385251CCB3B6600D36324 /* AppDelegate.m in Sources */,
 				84E385221CCB3B6600D36324 /* main.m in Sources */,
 				84E385891CCB591C00D36324 /* NewsInfo.m in Sources */,
 				84E385B81CCB696800D36324 /* FxGetColumn.m in Sources */,
+				84E385CA1CCB6DD900D36324 /* DetailPage.m in Sources */,
+				84E385C71CCB6D9D00D36324 /* MyPage.m in Sources */,
 				84E385BB1CCB697700D36324 /* FxGetNews.m in Sources */,
+				84E385D31CCB6EC500D36324 /* ColumnBarWidget.m in Sources */,
 				84E385881CCB591C00D36324 /* ColumnInfo.m in Sources */,
+				84E385C41CCB6D8700D36324 /* FavoritePage.m in Sources */,
 				84E385BE1CCB6BF400D36324 /* AdvertPage.m in Sources */,
+				84E385DC1CCB6FCA00D36324 /* FxBaseCell.m in Sources */,
 				84E385AC1CCB602000D36324 /* FxJsonBase.m in Sources */,
+				84E385D61CCB6EE300D36324 /* NewsWidget.m in Sources */,
+				84E385D91CCB6F3400D36324 /* FavoriteWidget.m in Sources */,
 				84E385B51CCB68D800D36324 /* FxGetAdvert.m in Sources */,
 				84E385AF1CCB602000D36324 /* FxJsonWriter.m in Sources */,
 				84E385AB1CCB602000D36324 /* FxJSON.m in Sources */,
 				84E385B21CCB64A200D36324 /* FxBaseOperation.m in Sources */,
+				84E385E21CCB701A00D36324 /* FavoriteCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
