@@ -14,5 +14,8 @@
     FxBaseOperation     *_operation;
 }
 
+- (void)showIndicator:(NSString *)tipMessage
+             autoHide:(BOOL)hide
+           afterDelay:(BOOL)delay;
 
 @end

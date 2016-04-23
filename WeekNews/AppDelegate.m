@@ -8,19 +8,36 @@
 
 #import "AppDelegate.h"
 #import "LoginPage.h"
-
+#import "AdvertPage.h"
+#import "HomePage.h"
 
 @implementation AppDelegate
+
+
++ (AppDelegate *)appDeg
+{
+    return  (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
+
+- (void)showHomePage
+{
+    LoginPage *page = [[LoginPage alloc] init];
+    
+    self.window.rootViewController = page;
+    
+    [self.window makeKeyAndVisible];
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //BASE_INFO_FUN(@"1243");
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[LoginPage alloc] init];
-    
-    [self.window makeKeyAndVisible];
-    
+//    self.window.rootViewController = [[LoginPage alloc] init];
+//    
+//    [self.window makeKeyAndVisible];
+
+    [AdvertPage showAdvertPage];
     return YES;
 }
 
@@ -35,6 +52,9 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
+    if ([AdvertPage canShowAdvertPage]) {
+        [AdvertPage showAdvertPage];
+    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

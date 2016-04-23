@@ -9,5 +9,11 @@
 #import "FxBasePage.h"
 
 @interface AdvertPage : FxBasePage
+{
+    IBOutlet UIImageView *_advertImageView;
+}
+
++ (BOOL)canShowAdvertPage;
++ (void)showAdvertPage;
 
 @end

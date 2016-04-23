@@ -52,6 +52,16 @@
 		84E385FA1CCB75E400D36324 /* login_forgot_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E385F31CCB75E400D36324 /* login_forgot_button@2x.png */; };
 		84E385FB1CCB75E400D36324 /* login_password_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E385F41CCB75E400D36324 /* login_password_icon@2x.png */; };
 		84E385FC1CCB75E400D36324 /* login_username_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E385F51CCB75E400D36324 /* login_username_icon@2x.png */; };
+		84E385FE1CCB8E9900D36324 /* AdvertPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E385FD1CCB8E9900D36324 /* AdvertPage.xib */; };
+		84E3860D1CCB91C000D36324 /* FxActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E386001CCB91C000D36324 /* FxActivity.m */; };
+		84E3860E1CCB91C000D36324 /* FxActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E386021CCB91C000D36324 /* FxActivityIndicator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84E3860F1CCB91C000D36324 /* FxAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E386041CCB91C000D36324 /* FxAppSetting.m */; };
+		84E386101CCB91C000D36324 /* FxButtonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E386061CCB91C000D36324 /* FxButtonHelper.m */; };
+		84E386111CCB91C000D36324 /* FxDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E386081CCB91C000D36324 /* FxDate.m */; };
+		84E386121CCB91C000D36324 /* FxFileUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3860A1CCB91C000D36324 /* FxFileUtility.m */; };
+		84E386131CCB91C000D36324 /* FxString.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3860C1CCB91C000D36324 /* FxString.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84E386161CCB923500D36324 /* FxGetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E386151CCB923500D36324 /* FxGetImage.m */; };
+		84E386191CCB93AA00D36324 /* FxGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E386181CCB93AA00D36324 /* FxGlobal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +170,25 @@
 		84E385F31CCB75E400D36324 /* login_forgot_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_forgot_button@2x.png"; sourceTree = "<group>"; };
 		84E385F41CCB75E400D36324 /* login_password_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_password_icon@2x.png"; sourceTree = "<group>"; };
 		84E385F51CCB75E400D36324 /* login_username_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_username_icon@2x.png"; sourceTree = "<group>"; };
+		84E385FD1CCB8E9900D36324 /* AdvertPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvertPage.xib; sourceTree = "<group>"; };
+		84E385FF1CCB91C000D36324 /* FxActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxActivity.h; sourceTree = "<group>"; };
+		84E386001CCB91C000D36324 /* FxActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxActivity.m; sourceTree = "<group>"; };
+		84E386011CCB91C000D36324 /* FxActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxActivityIndicator.h; sourceTree = "<group>"; };
+		84E386021CCB91C000D36324 /* FxActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxActivityIndicator.m; sourceTree = "<group>"; };
+		84E386031CCB91C000D36324 /* FxAppSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxAppSetting.h; sourceTree = "<group>"; };
+		84E386041CCB91C000D36324 /* FxAppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxAppSetting.m; sourceTree = "<group>"; };
+		84E386051CCB91C000D36324 /* FxButtonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxButtonHelper.h; sourceTree = "<group>"; };
+		84E386061CCB91C000D36324 /* FxButtonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxButtonHelper.m; sourceTree = "<group>"; };
+		84E386071CCB91C000D36324 /* FxDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxDate.h; sourceTree = "<group>"; };
+		84E386081CCB91C000D36324 /* FxDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxDate.m; sourceTree = "<group>"; };
+		84E386091CCB91C000D36324 /* FxFileUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxFileUtility.h; sourceTree = "<group>"; };
+		84E3860A1CCB91C000D36324 /* FxFileUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxFileUtility.m; sourceTree = "<group>"; };
+		84E3860B1CCB91C000D36324 /* FxString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxString.h; sourceTree = "<group>"; };
+		84E3860C1CCB91C000D36324 /* FxString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxString.m; sourceTree = "<group>"; };
+		84E386141CCB923500D36324 /* FxGetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxGetImage.h; sourceTree = "<group>"; };
+		84E386151CCB923500D36324 /* FxGetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxGetImage.m; sourceTree = "<group>"; };
+		84E386171CCB93AA00D36324 /* FxGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxGlobal.h; sourceTree = "<group>"; };
+		84E386181CCB93AA00D36324 /* FxGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxGlobal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,9 +287,10 @@
 		84E385541CCB3C1500D36324 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				84E386171CCB93AA00D36324 /* FxGlobal.h */,
+				84E386181CCB93AA00D36324 /* FxGlobal.m */,
 			);
-			name = Global;
-			path = Model;
+			path = Global;
 			sourceTree = "<group>";
 		};
 		84E385551CCB3C2300D36324 /* View */ = {
@@ -306,6 +336,8 @@
 				84E385BA1CCB697700D36324 /* FxGetNews.m */,
 				84E385E61CCB720100D36324 /* FxLogin.h */,
 				84E385E71CCB720100D36324 /* FxLogin.m */,
+				84E386141CCB923500D36324 /* FxGetImage.h */,
+				84E386151CCB923500D36324 /* FxGetImage.m */,
 			);
 			name = Operation;
 			path = Network;
@@ -321,6 +353,20 @@
 		84E385591CCB3C7800D36324 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				84E385FF1CCB91C000D36324 /* FxActivity.h */,
+				84E386001CCB91C000D36324 /* FxActivity.m */,
+				84E386011CCB91C000D36324 /* FxActivityIndicator.h */,
+				84E386021CCB91C000D36324 /* FxActivityIndicator.m */,
+				84E386031CCB91C000D36324 /* FxAppSetting.h */,
+				84E386041CCB91C000D36324 /* FxAppSetting.m */,
+				84E386051CCB91C000D36324 /* FxButtonHelper.h */,
+				84E386061CCB91C000D36324 /* FxButtonHelper.m */,
+				84E386071CCB91C000D36324 /* FxDate.h */,
+				84E386081CCB91C000D36324 /* FxDate.m */,
+				84E386091CCB91C000D36324 /* FxFileUtility.h */,
+				84E3860A1CCB91C000D36324 /* FxFileUtility.m */,
+				84E3860B1CCB91C000D36324 /* FxString.h */,
+				84E3860C1CCB91C000D36324 /* FxString.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -417,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				84E385EC1CCB739800D36324 /* LoginPage.xib */,
+				84E385FD1CCB8E9900D36324 /* AdvertPage.xib */,
 			);
 			name = Xib;
 			sourceTree = "<group>";
@@ -564,6 +611,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E385FE1CCB8E9900D36324 /* AdvertPage.xib in Resources */,
 				84E385F91CCB75E400D36324 /* login_button@2x.png in Resources */,
 				84E385F61CCB75E400D36324 /* account_snslogin_icon_1@2x.png in Resources */,
 				84E3852D1CCB3B6600D36324 /* Assets.xcassets in Resources */,
@@ -597,10 +645,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E3860E1CCB91C000D36324 /* FxActivityIndicator.m in Sources */,
 				84E3858E1CCB5D0200D36324 /* FxBaseController.m in Sources */,
 				84E385861CCB591C00D36324 /* AdvertInfo.m in Sources */,
 				84E385AD1CCB602000D36324 /* FxJsonParser.m in Sources */,
 				84E385C11CCB6D4E00D36324 /* NewsPage.m in Sources */,
+				84E3860F1CCB91C000D36324 /* FxAppSetting.m in Sources */,
 				84E385281CCB3B6600D36324 /* HomePage.m in Sources */,
 				84E385871CCB591C00D36324 /* BaseInfo.m in Sources */,
 				84E385EB1CCB72BE00D36324 /* LoginPage.m in Sources */,
@@ -612,7 +662,13 @@
 				84E385251CCB3B6600D36324 /* AppDelegate.m in Sources */,
 				84E385221CCB3B6600D36324 /* main.m in Sources */,
 				84E385891CCB591C00D36324 /* NewsInfo.m in Sources */,
+				84E386131CCB91C000D36324 /* FxString.m in Sources */,
+				84E386111CCB91C000D36324 /* FxDate.m in Sources */,
 				84E385B81CCB696800D36324 /* FxGetColumn.m in Sources */,
+				84E386161CCB923500D36324 /* FxGetImage.m in Sources */,
+				84E3860D1CCB91C000D36324 /* FxActivity.m in Sources */,
+				84E386121CCB91C000D36324 /* FxFileUtility.m in Sources */,
+				84E386191CCB93AA00D36324 /* FxGlobal.m in Sources */,
 				84E385CA1CCB6DD900D36324 /* DetailPage.m in Sources */,
 				84E385E51CCB716B00D36324 /* UserInfo.m in Sources */,
 				84E385C71CCB6D9D00D36324 /* MyPage.m in Sources */,
@@ -621,6 +677,7 @@
 				84E385D31CCB6EC500D36324 /* ColumnBarWidget.m in Sources */,
 				84E385881CCB591C00D36324 /* ColumnInfo.m in Sources */,
 				84E385C41CCB6D8700D36324 /* FavoritePage.m in Sources */,
+				84E386101CCB91C000D36324 /* FxButtonHelper.m in Sources */,
 				84E385BE1CCB6BF400D36324 /* AdvertPage.m in Sources */,
 				84E385DC1CCB6FCA00D36324 /* FxBaseCell.m in Sources */,
 				84E385AC1CCB602000D36324 /* FxJsonBase.m in Sources */,
