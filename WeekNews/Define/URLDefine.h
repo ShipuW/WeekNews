@@ -20,12 +20,12 @@
 #define BaseHost    @"http://www.maiziedu.com"
 #define BasePort    @""
 #else
-#define BaseHost    @"http://192.168.1.102"
+#define BaseHost    @"http://127.0.0.1"
 #define BasePort    @":80"
 #endif
 
 #define BaseServer  BaseHost BasePort
-#define BaseURLPath "/NewsReader/"
+#define BaseURLPath "/WeekNews/"
 #define BaseURL     BaseServer BaseURLPath
 #define BaseServer2 @"http://c.m.163.com/nc/article/"
 
