@@ -14,7 +14,7 @@
 //
 //// 系统版本
 //+ (BOOL)isSystemLowIOS8;
-//+ (BOOL)isSystemLowIOS7;
++ (BOOL)isSystemLowIOS7;
 //+ (BOOL)isSystemLowiOS6;
 //+ (NSString *)clientVersion;
 //

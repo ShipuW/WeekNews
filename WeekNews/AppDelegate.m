@@ -22,8 +22,9 @@
 - (void)showHomePage
 {
     LoginPage *page = [[LoginPage alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:page];
     
-    self.window.rootViewController = page;
+    self.window.rootViewController = navController;
     
     [self.window makeKeyAndVisible];
 }
@@ -32,6 +33,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //BASE_INFO_FUN(@"1243");
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];//设置白色状态栏
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 //    self.window.rootViewController = [[LoginPage alloc] init];
 //    

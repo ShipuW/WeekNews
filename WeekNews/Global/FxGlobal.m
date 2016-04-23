@@ -10,6 +10,17 @@
 
 @implementation FxGlobal
 
++ (BOOL)isSystemLowIOS7
+{
+    UIDevice *device = [UIDevice currentDevice];
+    CGFloat systemVer = [[device systemVersion] floatValue];
+    if (systemVer - IOSBaseVersion7 < -0.001) {
+        return YES;
+    }
+    
+    return NO;
+}
+
 + (NSString *)getRootPath
 {
     NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:RootPath];

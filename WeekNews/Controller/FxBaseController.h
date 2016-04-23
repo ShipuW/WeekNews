@@ -18,4 +18,7 @@
              autoHide:(BOOL)hide
            afterDelay:(BOOL)delay;
 
+- (void)setNavigationLeft:(NSString *)imageName sel:(SEL)sel;
+- (void)setNavigationRight:(NSString *)imageName;
+
 @end

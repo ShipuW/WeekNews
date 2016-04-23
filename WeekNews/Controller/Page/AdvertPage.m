@@ -54,17 +54,17 @@
     [self getAdvertImage];
 }
 
-//- (void)viewWillAppear:(BOOL)animated
-//{
-//    [super viewWillAppear:animated];
-//    [[UIApplication sharedApplication] setStatusBarHidden:YES];
-//}
-//
-//- (void)viewWillDisappear:(BOOL)animated
-//{
-//    [super viewWillDisappear:animated];
-//    [[UIApplication sharedApplication] setStatusBarHidden:NO];
-//}
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];//广告页面隐藏状态条
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];//退出广告页面显示状态条
+}
 
 - (void)getAdvertImage
 {

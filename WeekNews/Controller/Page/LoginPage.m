@@ -18,7 +18,10 @@
 
 - (void)viewDidLoad
 {
+    self.title = LoginTitle;
     [super viewDidLoad];
+    [self setNavigationLeft:@"NavigationBack.png" sel:nil];
+    [self setNavigationRight:@"NavigationSquare.png"];
 }
 
 - (BOOL)checkValid
