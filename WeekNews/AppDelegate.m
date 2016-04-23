@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginPage.h"
+
 
 @implementation AppDelegate
 
@@ -14,6 +16,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //BASE_INFO_FUN(@"1243");
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[LoginPage alloc] init];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

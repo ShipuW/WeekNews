@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FxBaseOperation.h"
 
-@interface FxBaseController : UIViewController
+
+@interface FxBaseController : UIViewController <FxOperationDelegate> {
+    FxBaseOperation     *_operation;
+}
+
 
 @end

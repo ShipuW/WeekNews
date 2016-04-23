@@ -10,4 +10,13 @@
 
 @implementation FxBaseController
 
+- (void)opFail:(NSString *)errorMessage
+{
+    BASE_INFO_FUN(errorMessage);
+}
+
+- (void)opSuccess:(id)data
+{
+}
+
 @end
