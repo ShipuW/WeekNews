@@ -15,6 +15,7 @@
 		84E385301CCB3B6600D36324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E3852E1CCB3B6600D36324 /* LaunchScreen.storyboard */; };
 		84E3853B1CCB3B6600D36324 /* WeekNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3853A1CCB3B6600D36324 /* WeekNewsTests.m */; };
 		84E385461CCB3B6600D36324 /* WeekNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385451CCB3B6600D36324 /* WeekNewsUITests.m */; };
+		84E385791CCB4DC400D36324 /* FxBasePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385781CCB4DC400D36324 /* FxBasePage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		84E385531CCB3BD100D36324 /* Readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		84E3855C1CCB3D0300D36324 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		84E385761CCB48B900D36324 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		84E385771CCB4DC400D36324 /* FxBasePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxBasePage.h; sourceTree = "<group>"; };
+		84E385781CCB4DC400D36324 /* FxBasePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxBasePage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +220,8 @@
 			children = (
 				84E385261CCB3B6600D36324 /* HomePage.h */,
 				84E385271CCB3B6600D36324 /* HomePage.m */,
+				84E385771CCB4DC400D36324 /* FxBasePage.h */,
+				84E385781CCB4DC400D36324 /* FxBasePage.m */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -399,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E385281CCB3B6600D36324 /* HomePage.m in Sources */,
+				84E385791CCB4DC400D36324 /* FxBasePage.m in Sources */,
 				84E385251CCB3B6600D36324 /* AppDelegate.m in Sources */,
 				84E385221CCB3B6600D36324 /* main.m in Sources */,
 			);
