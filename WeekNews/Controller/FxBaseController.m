@@ -1,5 +1,5 @@
 //
-//  FxBasePage.h
+//  FxBaseController.m
 //  WeekNews
 //
 //  Created by admin on 16/4/23.
@@ -8,6 +8,6 @@
 
 #import "FxBaseController.h"
 
-@interface FxBasePage : FxBaseController
+@implementation FxBaseController
 
 @end

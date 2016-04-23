@@ -15,6 +15,16 @@
 		84E3853B1CCB3B6600D36324 /* WeekNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3853A1CCB3B6600D36324 /* WeekNewsTests.m */; };
 		84E385461CCB3B6600D36324 /* WeekNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385451CCB3B6600D36324 /* WeekNewsUITests.m */; };
 		84E385791CCB4DC400D36324 /* FxBasePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385781CCB4DC400D36324 /* FxBasePage.m */; };
+		84E385861CCB591C00D36324 /* AdvertInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3857F1CCB591C00D36324 /* AdvertInfo.m */; };
+		84E385871CCB591C00D36324 /* BaseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385811CCB591C00D36324 /* BaseInfo.m */; };
+		84E385881CCB591C00D36324 /* ColumnInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385831CCB591C00D36324 /* ColumnInfo.m */; };
+		84E385891CCB591C00D36324 /* NewsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385851CCB591C00D36324 /* NewsInfo.m */; };
+		84E3858E1CCB5D0200D36324 /* FxBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3858D1CCB5D0200D36324 /* FxBaseController.m */; };
+		84E385AB1CCB602000D36324 /* FxJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385A21CCB602000D36324 /* FxJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84E385AC1CCB602000D36324 /* FxJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385A41CCB602000D36324 /* FxJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84E385AD1CCB602000D36324 /* FxJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385A61CCB602000D36324 /* FxJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84E385AE1CCB602000D36324 /* FxJsonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385A81CCB602000D36324 /* FxJsonUtility.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84E385AF1CCB602000D36324 /* FxJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385AA1CCB602000D36324 /* FxJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,27 @@
 		84E385761CCB48B900D36324 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		84E385771CCB4DC400D36324 /* FxBasePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxBasePage.h; sourceTree = "<group>"; };
 		84E385781CCB4DC400D36324 /* FxBasePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxBasePage.m; sourceTree = "<group>"; };
+		84E3857E1CCB591C00D36324 /* AdvertInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertInfo.h; sourceTree = "<group>"; };
+		84E3857F1CCB591C00D36324 /* AdvertInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertInfo.m; sourceTree = "<group>"; };
+		84E385801CCB591C00D36324 /* BaseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInfo.h; sourceTree = "<group>"; };
+		84E385811CCB591C00D36324 /* BaseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseInfo.m; sourceTree = "<group>"; };
+		84E385821CCB591C00D36324 /* ColumnInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnInfo.h; sourceTree = "<group>"; };
+		84E385831CCB591C00D36324 /* ColumnInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnInfo.m; sourceTree = "<group>"; };
+		84E385841CCB591C00D36324 /* NewsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsInfo.h; sourceTree = "<group>"; };
+		84E385851CCB591C00D36324 /* NewsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsInfo.m; sourceTree = "<group>"; };
+		84E3858B1CCB5A5B00D36324 /* URLDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLDefine.h; sourceTree = "<group>"; };
+		84E3858C1CCB5D0200D36324 /* FxBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxBaseController.h; sourceTree = "<group>"; };
+		84E3858D1CCB5D0200D36324 /* FxBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxBaseController.m; sourceTree = "<group>"; };
+		84E385A11CCB602000D36324 /* FxJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxJSON.h; sourceTree = "<group>"; };
+		84E385A21CCB602000D36324 /* FxJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxJSON.m; sourceTree = "<group>"; };
+		84E385A31CCB602000D36324 /* FxJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxJsonBase.h; sourceTree = "<group>"; };
+		84E385A41CCB602000D36324 /* FxJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxJsonBase.m; sourceTree = "<group>"; };
+		84E385A51CCB602000D36324 /* FxJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxJsonParser.h; sourceTree = "<group>"; };
+		84E385A61CCB602000D36324 /* FxJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxJsonParser.m; sourceTree = "<group>"; };
+		84E385A71CCB602000D36324 /* FxJsonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxJsonUtility.h; sourceTree = "<group>"; };
+		84E385A81CCB602000D36324 /* FxJsonUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxJsonUtility.m; sourceTree = "<group>"; };
+		84E385A91CCB602000D36324 /* FxJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxJsonWriter.h; sourceTree = "<group>"; };
+		84E385AA1CCB602000D36324 /* FxJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxJsonWriter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +192,8 @@
 		84E385551CCB3C2300D36324 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84E3858C1CCB5D0200D36324 /* FxBaseController.h */,
+				84E3858D1CCB5D0200D36324 /* FxBaseController.m */,
 				84E3855E1CCB3D3B00D36324 /* Page */,
 				84E3855F1CCB3D4600D36324 /* Widget */,
 				84E385601CCB3D5200D36324 /* Cell */,
@@ -171,6 +204,14 @@
 		84E385561CCB3C3000D36324 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84E3857E1CCB591C00D36324 /* AdvertInfo.h */,
+				84E3857F1CCB591C00D36324 /* AdvertInfo.m */,
+				84E385801CCB591C00D36324 /* BaseInfo.h */,
+				84E385811CCB591C00D36324 /* BaseInfo.m */,
+				84E385821CCB591C00D36324 /* ColumnInfo.h */,
+				84E385831CCB591C00D36324 /* ColumnInfo.m */,
+				84E385841CCB591C00D36324 /* NewsInfo.h */,
+				84E385851CCB591C00D36324 /* NewsInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +240,7 @@
 		84E3855A1CCB3C9400D36324 /* ThirdSDK */ = {
 			isa = PBXGroup;
 			children = (
+				84E385A01CCB5FD200D36324 /* JsonFramework */,
 			);
 			path = ThirdSDK;
 			sourceTree = "<group>";
@@ -266,8 +308,26 @@
 			isa = PBXGroup;
 			children = (
 				84E3855C1CCB3D0300D36324 /* Defines.h */,
+				84E3858B1CCB5A5B00D36324 /* URLDefine.h */,
 			);
 			path = Define;
+			sourceTree = "<group>";
+		};
+		84E385A01CCB5FD200D36324 /* JsonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				84E385A11CCB602000D36324 /* FxJSON.h */,
+				84E385A21CCB602000D36324 /* FxJSON.m */,
+				84E385A31CCB602000D36324 /* FxJsonBase.h */,
+				84E385A41CCB602000D36324 /* FxJsonBase.m */,
+				84E385A51CCB602000D36324 /* FxJsonParser.h */,
+				84E385A61CCB602000D36324 /* FxJsonParser.m */,
+				84E385A71CCB602000D36324 /* FxJsonUtility.h */,
+				84E385A81CCB602000D36324 /* FxJsonUtility.m */,
+				84E385A91CCB602000D36324 /* FxJsonWriter.h */,
+				84E385AA1CCB602000D36324 /* FxJsonWriter.m */,
+			);
+			path = JsonFramework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,10 +459,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E3858E1CCB5D0200D36324 /* FxBaseController.m in Sources */,
+				84E385861CCB591C00D36324 /* AdvertInfo.m in Sources */,
+				84E385AD1CCB602000D36324 /* FxJsonParser.m in Sources */,
 				84E385281CCB3B6600D36324 /* HomePage.m in Sources */,
+				84E385871CCB591C00D36324 /* BaseInfo.m in Sources */,
 				84E385791CCB4DC400D36324 /* FxBasePage.m in Sources */,
+				84E385AE1CCB602000D36324 /* FxJsonUtility.m in Sources */,
 				84E385251CCB3B6600D36324 /* AppDelegate.m in Sources */,
 				84E385221CCB3B6600D36324 /* main.m in Sources */,
+				84E385891CCB591C00D36324 /* NewsInfo.m in Sources */,
+				84E385881CCB591C00D36324 /* ColumnInfo.m in Sources */,
+				84E385AC1CCB602000D36324 /* FxJsonBase.m in Sources */,
+				84E385AF1CCB602000D36324 /* FxJsonWriter.m in Sources */,
+				84E385AB1CCB602000D36324 /* FxJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
