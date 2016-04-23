@@ -13,11 +13,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    BASE_INFO_FUN(@"1243");
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application

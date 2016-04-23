@@ -53,6 +53,7 @@
 		84E385471CCB3B6600D36324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84E385531CCB3BD100D36324 /* Readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		84E3855C1CCB3D0300D36324 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		84E385761CCB48B900D36324 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +126,7 @@
 			children = (
 				84E385311CCB3B6600D36324 /* Info.plist */,
 				84E385211CCB3B6600D36324 /* main.m */,
+				84E385761CCB48B900D36324 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -152,6 +154,7 @@
 			children = (
 			);
 			name = Global;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		84E385551CCB3C2300D36324 /* Controller */ = {
@@ -161,42 +164,42 @@
 				84E3855F1CCB3D4600D36324 /* Widget */,
 				84E385601CCB3D5200D36324 /* Cell */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		84E385561CCB3C3000D36324 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		84E385571CCB3C4400D36324 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Network;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		84E385581CCB3C5F00D36324 /* DB */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = DB;
+			path = DB;
 			sourceTree = "<group>";
 		};
 		84E385591CCB3C7800D36324 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Utility;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		84E3855A1CCB3C9400D36324 /* ThirdSDK */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = ThirdSDK;
+			path = ThirdSDK;
 			sourceTree = "<group>";
 		};
 		84E3855D1CCB3D1E00D36324 /* Resources */ = {
@@ -215,21 +218,21 @@
 				84E385261CCB3B6600D36324 /* HomePage.h */,
 				84E385271CCB3B6600D36324 /* HomePage.m */,
 			);
-			name = Page;
+			path = Page;
 			sourceTree = "<group>";
 		};
 		84E3855F1CCB3D4600D36324 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Widget;
+			path = Widget;
 			sourceTree = "<group>";
 		};
 		84E385601CCB3D5200D36324 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Cell;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		84E385611CCB3D7700D36324 /* Config */ = {
@@ -245,6 +248,7 @@
 				84E3852C1CCB3B6600D36324 /* Assets.xcassets */,
 			);
 			name = Image;
+			path = Resources/Image;
 			sourceTree = "<group>";
 		};
 		84E385631CCB3DCB00D36324 /* Xib */ = {
@@ -261,7 +265,7 @@
 			children = (
 				84E3855C1CCB3D0300D36324 /* Defines.h */,
 			);
-			name = Define;
+			path = Define;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -537,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = WeekNews/PrefixHeader.pch;
 				INFOPLIST_FILE = WeekNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waspmaster.WeekNews;
@@ -548,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = WeekNews/PrefixHeader.pch;
 				INFOPLIST_FILE = WeekNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waspmaster.WeekNews;
@@ -643,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = WeekNews/PrefixHeader.pch;
 				INFOPLIST_FILE = WeekNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waspmaster.WeekNews;
@@ -715,6 +722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = WeekNews/PrefixHeader.pch;
 				INFOPLIST_FILE = WeekNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waspmaster.WeekNews;
@@ -787,6 +795,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = WeekNews/PrefixHeader.pch;
 				INFOPLIST_FILE = WeekNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waspmaster.WeekNews;
@@ -842,6 +851,7 @@
 				84E3856E1CCB456B00D36324 /* Enterprise */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84E3854D1CCB3B6600D36324 /* Build configuration list for PBXNativeTarget "WeekNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -853,6 +863,7 @@
 				84E3856F1CCB456B00D36324 /* Enterprise */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84E385501CCB3B6600D36324 /* Build configuration list for PBXNativeTarget "WeekNewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -864,6 +875,7 @@
 				84E385701CCB456B00D36324 /* Enterprise */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
