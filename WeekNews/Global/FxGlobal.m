@@ -39,4 +39,21 @@
     return path;
 }
 
++ (BOOL)setNotBackUp:(NSString *)filePath
+{
+    NSError *error = nil;
+    NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+    NSNumber *attrValue = [NSNumber numberWithBool:YES];
+    
+    [fileURL setResourceValue:attrValue
+                       forKey:NSURLIsExcludedFromBackupKey
+                        error:&error];
+    if (error!=nil) {
+        BASE_ERROR_FUN([error localizedDescription]);
+        return NO;
+    }
+    
+    return YES;
+}
+
 @end

@@ -10,6 +10,7 @@
 #import "ContentInfo.h"
 #import "FxGetContent.h"
 #import "ContentImageInfo.h"
+#import "WXApi.h"
 
 @implementation DetailPage
 
@@ -79,30 +80,30 @@
     return html;
 }
 
-//- (void)doShare
-//{
-//    WXMediaMessage *message = [WXMediaMessage message];
-//    message.title = self.newsInfo.name;
-//    message.description = self.newsInfo.desc;
-//    
-//    NSString *iconFile = [NSString stringWithFormat:NewsIconPrex, self.newsInfo.ID];
-//    
-//    iconFile = [FxGlobal getCacheImage:iconFile];
-//    [message setThumbImage:[UIImage imageWithContentsOfFile:iconFile]];
-//    
-//    WXWebpageObject *ext = [WXWebpageObject object];
-//    ext.webpageUrl = self.newsInfo.contentUrl;
-//    
-//    message.mediaObject = ext;
-//    
-//    SendMessageToWXReq* req = [[SendMessageToWXReq alloc] init];
-//    req.message = message;
-//    req.bText = NO;
-//    req.scene = WXSceneTimeline;
-//    
-//    if (![WXApi sendReq:req]) {
-//        [self showIndicator:@"未安装微信" autoHide:YES afterDelay:YES];
-//    }
-//}
+- (void)doShare
+{
+    WXMediaMessage *message = [WXMediaMessage message];
+    message.title = self.newsInfo.name;
+    message.description = self.newsInfo.desc;
+    
+    NSString *iconFile = [NSString stringWithFormat:NewsIconPrex, self.newsInfo.ID];
+    
+    iconFile = [FxGlobal getCacheImage:iconFile];
+    [message setThumbImage:[UIImage imageWithContentsOfFile:iconFile]];
+    
+    WXWebpageObject *ext = [WXWebpageObject object];
+    ext.webpageUrl = self.newsInfo.contentUrl;
+    
+    message.mediaObject = ext;
+    
+    SendMessageToWXReq* req = [[SendMessageToWXReq alloc] init];
+    req.message = message;
+    req.bText = NO;
+    req.scene = WXSceneTimeline;
+    
+    if (![WXApi sendReq:req]) {
+        [self showIndicator:@"未安装微信" autoHide:YES afterDelay:YES];
+    }
+}
 
 @end

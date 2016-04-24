@@ -17,10 +17,10 @@
 
 
 #if ProductType == 0
-#define BaseHost    @"http://www.maiziedu.com"
-#define BasePort    @""
+#define BaseHost    @"http://wangshipu001.eicp.net"
+#define BasePort    @"80"
 #else
-#define BaseHost    @"http://127.0.0.1"
+#define BaseHost    @"http://wangshipu001.eicp.net" //127.0.0.1
 #define BasePort    @":80"
 #endif
 

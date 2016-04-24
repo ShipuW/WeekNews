@@ -22,7 +22,7 @@
 + (NSString *)getRootPath;
 + (NSString *)getCacheImage:(NSString *)fileName;
 //+ (NSString *)getUserDBFile;
-//+ (BOOL)setNotBackUp:(NSString *)filePath;
++ (BOOL)setNotBackUp:(NSString *)filePath;
 //
 //// 系统提示
 //+ (void)alertMessage:(NSString *)message;
