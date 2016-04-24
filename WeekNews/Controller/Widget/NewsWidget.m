@@ -86,7 +86,7 @@
     
     [self.listData addObjectsFromArray:data];
     [self updateUI];
-    //[self hideIndicator];
+    [self hideIndicator];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -127,15 +127,15 @@
     return cell;
 }
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    DetailPage *page = [[DetailPage alloc] init];
-//    
-//    page.newsInfo = [self.listData objectAtIndex:indexPath.row];
-//    page.hidesBottomBarWhenPushed = YES;
-//    
-//    UIViewController *owner =  self.owner;
-//    [owner.navigationController pushViewController:page animated:YES];
-//}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DetailPage *page = [[DetailPage alloc] init];
+    
+    page.newsInfo = [self.listData objectAtIndex:indexPath.row];
+    page.hidesBottomBarWhenPushed = YES;
+    
+    UIViewController *owner =  self.owner;
+    [owner.navigationController pushViewController:page animated:YES];
+}
 
 @end

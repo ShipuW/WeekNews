@@ -32,7 +32,7 @@
         _password.text.length <= 0) {
         
         validate = NO;
-//        [self showIndicator:LoginCheckTip autoHide:YES afterDelay:YES];
+        [self showIndicator:LoginCheckTip autoHide:YES afterDelay:YES];
     }
     
     return validate;

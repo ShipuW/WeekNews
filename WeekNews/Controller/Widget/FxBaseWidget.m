@@ -45,7 +45,7 @@
 
 - (void)requestServer
 {
-   // [self showIndicator:LoadingTip autoHide:NO afterDelay:NO];
+    [self showIndicator:LoadingTip autoHide:NO afterDelay:NO];
     [self requestServerOp];
 }
 

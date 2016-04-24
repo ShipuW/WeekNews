@@ -6,8 +6,11 @@
 //  Copyright © 2016年 admin. All rights reserved.
 //
 
-#import "FxBasePage.h"
+#import "FxBaseWebPage.h"
+#import "NewsInfo.h"
 
-@interface DetailPage : FxBasePage
+@interface DetailPage : FxBaseWebPage
+
+@property(nonatomic, strong) NewsInfo   *newsInfo;
 
 @end

@@ -19,7 +19,7 @@
 #import "URLDefine.h"
 #import "FxJsonUtility.h"
 #import "FxFileUtility.h"
-//#import "FxStatis.h"
+#import "FxStatis.h"
 
 #endif /* PrefixHeader_pch */
 

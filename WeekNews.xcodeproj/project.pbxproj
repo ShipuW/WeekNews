@@ -42,6 +42,17 @@
 		848D58941CCD498D00845671 /* NewsMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D58931CCD498D00845671 /* NewsMoreCell.m */; };
 		848D58961CCD49FA00845671 /* NewsMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D58951CCD49FA00845671 /* NewsMoreCell.xib */; };
 		848D58991CCD514F00845671 /* FxDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D58981CCD514F00845671 /* FxDownload.m */; };
+		848D589C1CCD537B00845671 /* ContentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D589B1CCD537B00845671 /* ContentInfo.m */; };
+		848D589F1CCD53BB00845671 /* ContentImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D589E1CCD53BB00845671 /* ContentImageInfo.m */; };
+		848D58A21CCD54EB00845671 /* FxBaseNavPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D58A11CCD54EB00845671 /* FxBaseNavPage.m */; };
+		848D58A51CCD550500845671 /* FxBaseWebPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D58A41CCD550500845671 /* FxBaseWebPage.m */; };
+		848D58A81CCD57A200845671 /* FxStatis.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D58A71CCD57A200845671 /* FxStatis.m */; };
+		848D58AB1CCD591200845671 /* FxGetContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D58AA1CCD591200845671 /* FxGetContent.m */; };
+		848D58AD1CCD5A3100845671 /* DetailPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D58AC1CCD5A3100845671 /* DetailPage.xib */; };
+		848D58B31CCD64DF00845671 /* content_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 848D58AF1CCD64DF00845671 /* content_template.html */; };
+		848D58B41CCD64DF00845671 /* content_template2.html in Resources */ = {isa = PBXBuildFile; fileRef = 848D58B01CCD64DF00845671 /* content_template2.html */; };
+		848D58B51CCD64DF00845671 /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 848D58B11CCD64DF00845671 /* content.css */; };
+		848D58B61CCD64DF00845671 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 848D58B21CCD64DF00845671 /* content.js */; };
 		84E385221CCB3B6600D36324 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385211CCB3B6600D36324 /* main.m */; };
 		84E385251CCB3B6600D36324 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385241CCB3B6600D36324 /* AppDelegate.m */; };
 		84E385281CCB3B6600D36324 /* HomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E385271CCB3B6600D36324 /* HomePage.m */; };
@@ -168,6 +179,23 @@
 		848D58951CCD49FA00845671 /* NewsMoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsMoreCell.xib; sourceTree = "<group>"; };
 		848D58971CCD514F00845671 /* FxDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxDownload.h; sourceTree = "<group>"; };
 		848D58981CCD514F00845671 /* FxDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxDownload.m; sourceTree = "<group>"; };
+		848D589A1CCD537B00845671 /* ContentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentInfo.h; sourceTree = "<group>"; };
+		848D589B1CCD537B00845671 /* ContentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentInfo.m; sourceTree = "<group>"; };
+		848D589D1CCD53BB00845671 /* ContentImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentImageInfo.h; sourceTree = "<group>"; };
+		848D589E1CCD53BB00845671 /* ContentImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentImageInfo.m; sourceTree = "<group>"; };
+		848D58A01CCD54EB00845671 /* FxBaseNavPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxBaseNavPage.h; sourceTree = "<group>"; };
+		848D58A11CCD54EB00845671 /* FxBaseNavPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxBaseNavPage.m; sourceTree = "<group>"; };
+		848D58A31CCD550500845671 /* FxBaseWebPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxBaseWebPage.h; sourceTree = "<group>"; };
+		848D58A41CCD550500845671 /* FxBaseWebPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxBaseWebPage.m; sourceTree = "<group>"; };
+		848D58A61CCD57A200845671 /* FxStatis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxStatis.h; sourceTree = "<group>"; };
+		848D58A71CCD57A200845671 /* FxStatis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxStatis.m; sourceTree = "<group>"; };
+		848D58A91CCD591200845671 /* FxGetContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxGetContent.h; sourceTree = "<group>"; };
+		848D58AA1CCD591200845671 /* FxGetContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxGetContent.m; sourceTree = "<group>"; };
+		848D58AC1CCD5A3100845671 /* DetailPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailPage.xib; sourceTree = "<group>"; };
+		848D58AF1CCD64DF00845671 /* content_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content_template.html; sourceTree = "<group>"; };
+		848D58B01CCD64DF00845671 /* content_template2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content_template2.html; sourceTree = "<group>"; };
+		848D58B11CCD64DF00845671 /* content.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
+		848D58B21CCD64DF00845671 /* content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
 		84E3851D1CCB3B6600D36324 /* WeekNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E385211CCB3B6600D36324 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84E385231CCB3B6600D36324 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -355,6 +383,17 @@
 			name = Background;
 			sourceTree = "<group>";
 		};
+		848D58AE1CCD64AD00845671 /* Html */ = {
+			isa = PBXGroup;
+			children = (
+				848D58AF1CCD64DF00845671 /* content_template.html */,
+				848D58B01CCD64DF00845671 /* content_template2.html */,
+				848D58B11CCD64DF00845671 /* content.css */,
+				848D58B21CCD64DF00845671 /* content.js */,
+			);
+			path = Html;
+			sourceTree = "<group>";
+		};
 		84E385141CCB3B6600D36324 = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +469,8 @@
 				84E386181CCB93AA00D36324 /* FxGlobal.m */,
 				848D58971CCD514F00845671 /* FxDownload.h */,
 				848D58981CCD514F00845671 /* FxDownload.m */,
+				848D58A61CCD57A200845671 /* FxStatis.h */,
+				848D58A71CCD57A200845671 /* FxStatis.m */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -462,6 +503,10 @@
 				84E385E41CCB716B00D36324 /* UserInfo.m */,
 				841E4A3E1CCC9665008D6D80 /* PageInfo.h */,
 				841E4A3F1CCC9665008D6D80 /* PageInfo.m */,
+				848D589A1CCD537B00845671 /* ContentInfo.h */,
+				848D589B1CCD537B00845671 /* ContentInfo.m */,
+				848D589D1CCD53BB00845671 /* ContentImageInfo.h */,
+				848D589E1CCD53BB00845671 /* ContentImageInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -481,6 +526,8 @@
 				84E385E71CCB720100D36324 /* FxLogin.m */,
 				84E386141CCB923500D36324 /* FxGetImage.h */,
 				84E386151CCB923500D36324 /* FxGetImage.m */,
+				848D58A91CCD591200845671 /* FxGetContent.h */,
+				848D58AA1CCD591200845671 /* FxGetContent.m */,
 			);
 			name = Operation;
 			path = Network;
@@ -525,6 +572,7 @@
 		84E3855D1CCB3D1E00D36324 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				848D58AE1CCD64AD00845671 /* Html */,
 				84E385611CCB3D7700D36324 /* Config */,
 				84E385621CCB3D8100D36324 /* Image */,
 				84E385631CCB3DCB00D36324 /* Xib */,
@@ -551,6 +599,10 @@
 				84E385C91CCB6DD900D36324 /* DetailPage.m */,
 				84E385E91CCB72BE00D36324 /* LoginPage.h */,
 				84E385EA1CCB72BE00D36324 /* LoginPage.m */,
+				848D58A01CCD54EB00845671 /* FxBaseNavPage.h */,
+				848D58A11CCD54EB00845671 /* FxBaseNavPage.m */,
+				848D58A31CCD550500845671 /* FxBaseWebPage.h */,
+				848D58A41CCD550500845671 /* FxBaseWebPage.m */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -625,6 +677,7 @@
 				841E4A541CCCD1A7008D6D80 /* NewsCell.xib */,
 				848D58901CCD1C8600845671 /* NewsWidget.xib */,
 				848D58951CCD49FA00845671 /* NewsMoreCell.xib */,
+				848D58AC1CCD5A3100845671 /* DetailPage.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -793,9 +846,12 @@
 				841E4A391CCC8E34008D6D80 /* VoiceIconSelect@2x.png in Resources */,
 				84E385F91CCB75E400D36324 /* login_button@2x.png in Resources */,
 				841E4A4F1CCCB1CA008D6D80 /* ColumnBarWidget.xib in Resources */,
+				848D58B31CCD64DF00845671 /* content_template.html in Resources */,
 				841E4A2E1CCC8E34008D6D80 /* DiscoveryIconSelect@2x.png in Resources */,
+				848D58B61CCD64DF00845671 /* content.js in Resources */,
 				841E4A4D1CCCABE8008D6D80 /* ColumnBarRight@2x.png in Resources */,
 				84E3862D1CCBA8C800D36324 /* NavigationBell@2x.png in Resources */,
+				848D58B51CCD64DF00845671 /* content.css in Resources */,
 				841E4A461CCCA7DA008D6D80 /* FavoriteIconSelect@2x.ico in Resources */,
 				84E3862B1CCBA8C800D36324 /* NavigationBar44@2x.png in Resources */,
 				841E4A621CCCD5DC008D6D80 /* NewsDefault@2x.png in Resources */,
@@ -805,6 +861,7 @@
 				841E4A361CCC8E34008D6D80 /* tabbar_icon_media_normal@2x.png in Resources */,
 				841E4A301CCC8E34008D6D80 /* MyIconSelect@2x.png in Resources */,
 				84E386251CCBA8C800D36324 /* NavBarAlpha.png in Resources */,
+				848D58B41CCD64DF00845671 /* content_template2.html in Resources */,
 				848D58911CCD1C8600845671 /* NewsWidget.xib in Resources */,
 				84E385F61CCB75E400D36324 /* account_snslogin_icon_1@2x.png in Resources */,
 				841E4A321CCC8E34008D6D80 /* NewsIconSelect@2x.png in Resources */,
@@ -814,6 +871,7 @@
 				84E3862A1CCBA8C800D36324 /* NavigationBackBlack@2x.png in Resources */,
 				841E4A651CCCD5DC008D6D80 /* WeatherShare@2x.png in Resources */,
 				84E3852D1CCB3B6600D36324 /* Assets.xcassets in Resources */,
+				848D58AD1CCD5A3100845671 /* DetailPage.xib in Resources */,
 				84E3862C1CCBA8C800D36324 /* NavigationBar64@2x.png in Resources */,
 				841E4A4C1CCCABE8008D6D80 /* ColumnBarLeft@2x.png in Resources */,
 				841E4A2F1CCC8E34008D6D80 /* MyIcon@2x.png in Resources */,
@@ -875,8 +933,10 @@
 				848D58991CCD514F00845671 /* FxDownload.m in Sources */,
 				84E385D01CCB6E7C00D36324 /* FxTableWidget.m in Sources */,
 				84E385DF1CCB700C00D36324 /* NewsCell.m in Sources */,
+				848D58AB1CCD591200845671 /* FxGetContent.m in Sources */,
 				84E385791CCB4DC400D36324 /* FxBasePage.m in Sources */,
 				84E385AE1CCB602000D36324 /* FxJsonUtility.m in Sources */,
+				848D589C1CCD537B00845671 /* ContentInfo.m in Sources */,
 				84E385251CCB3B6600D36324 /* AppDelegate.m in Sources */,
 				84E385221CCB3B6600D36324 /* main.m in Sources */,
 				84E385891CCB591C00D36324 /* NewsInfo.m in Sources */,
@@ -895,16 +955,20 @@
 				841E4A401CCC9665008D6D80 /* PageInfo.m in Sources */,
 				84E385C71CCB6D9D00D36324 /* MyPage.m in Sources */,
 				84E385E81CCB720100D36324 /* FxLogin.m in Sources */,
+				848D58A51CCD550500845671 /* FxBaseWebPage.m in Sources */,
 				84E385BB1CCB697700D36324 /* FxGetNews.m in Sources */,
 				84E385D31CCB6EC500D36324 /* ColumnBarWidget.m in Sources */,
 				841E4A581CCCD261008D6D80 /* FxLandscapeTableView.m in Sources */,
+				848D589F1CCD53BB00845671 /* ContentImageInfo.m in Sources */,
 				84E385881CCB591C00D36324 /* ColumnInfo.m in Sources */,
 				84E385C41CCB6D8700D36324 /* FavoritePage.m in Sources */,
+				848D58A81CCD57A200845671 /* FxStatis.m in Sources */,
 				84E386101CCB91C000D36324 /* FxButtonHelper.m in Sources */,
 				84E385BE1CCB6BF400D36324 /* AdvertPage.m in Sources */,
 				84E385DC1CCB6FCA00D36324 /* FxBaseCell.m in Sources */,
 				84E385AC1CCB602000D36324 /* FxJsonBase.m in Sources */,
 				84E385D61CCB6EE300D36324 /* NewsWidget.m in Sources */,
+				848D58A21CCD54EB00845671 /* FxBaseNavPage.m in Sources */,
 				84E385D91CCB6F3400D36324 /* FavoriteWidget.m in Sources */,
 				84E385B51CCB68D800D36324 /* FxGetAdvert.m in Sources */,
 				84E385AF1CCB602000D36324 /* FxJsonWriter.m in Sources */,

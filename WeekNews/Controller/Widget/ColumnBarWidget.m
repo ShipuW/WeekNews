@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+//    [super viewDidLoad];
+//    [self hideIndicator];
     _btnHelper = [[FxButtonHelper alloc] init];
     self.listData = [NSMutableArray array];
     
@@ -36,7 +37,7 @@
     self.listData = [ColumnInfo columnItems];
     [self updateUI];
     self.pageIndex = [[FxDate getWeekDay:[NSDate date]] intValue] - 1;//获取当前星期数
-    
+   
 }
 
 
