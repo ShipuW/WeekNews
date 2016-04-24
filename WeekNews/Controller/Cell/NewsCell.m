@@ -8,6 +8,7 @@
 
 #import "NewsCell.h"
 #import "NewsInfo.h"
+#import "FxDownload.h"
 
 @implementation NewsCell
 
@@ -30,9 +31,9 @@
     _descLabel.numberOfLines = 2;
     _descLabel.text = info.desc;
 #pragma mark - 应该用异步加载
-    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:info.iconUrl]];
-    _imageView.image = [UIImage imageWithData:imageData];
-    //[[FxDownload download] setNewsIcon:info imageView:_imageView];
+//    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:info.iconUrl]];
+//    _imageView.image = [UIImage imageWithData:imageData];
+    [[FxDownload download] setNewsIcon:info imageView:_imageView];
 }
 
 - (void)downloadIcon:(NSNotification *)notification
