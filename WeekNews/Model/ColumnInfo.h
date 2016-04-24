@@ -10,4 +10,6 @@
 
 @interface ColumnInfo : BaseInfo
 
++ (NSMutableArray *)columnItems;
+
 @end

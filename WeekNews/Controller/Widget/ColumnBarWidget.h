@@ -7,7 +7,22 @@
 //
 
 #import "FxBaseWidget.h"
+#import "FxButtonHelper.h"
 
-@interface ColumnBarWidget : FxBaseWidget
+@protocol ColumnBarDelegate;
+@interface ColumnBarWidget : FxBaseWidget {
+    IBOutlet UIScrollView   *_scrollView;
+    FxButtonHelper          *_btnHelper;//处理选中按钮变色
+}
+
+@property(nonatomic, assign) NSInteger      pageIndex;
+@property(nonatomic, assign) id<ColumnBarDelegate> delegate;
+
+@end
+
+
+@protocol ColumnBarDelegate <NSObject>
+
+- (void)didSelect:(NSInteger)pageIndex;
 
 @end

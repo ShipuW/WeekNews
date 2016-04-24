@@ -40,5 +40,6 @@
 + (NSString *)getYear:(NSDate *)date;
 + (NSString *)getMonth:(NSDate *)date;
 + (NSString *)getDay:(NSDate *)date;
++ (NSString *)getWeekDay:(NSDate *)date;
 
 @end

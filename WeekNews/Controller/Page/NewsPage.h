@@ -7,7 +7,11 @@
 //
 
 #import "FxBasePage.h"
+#import "ColumnBarWidget.h"
 
-@interface NewsPage : FxBasePage
+@interface NewsPage : FxBasePage <ColumnBarDelegate> {
+    IBOutlet UIView *_barBackView;
+    ColumnBarWidget *_barWidget;
+}
 
 @end

@@ -157,4 +157,16 @@ static NSDateFormatter *s_formatterYMDHMS = nil;
     return day;
 }
 
++ (NSString *)getWeekDay:(NSDate *)date
+{
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *comps = nil;
+    
+    comps = [calendar components:
+             NSWeekdayCalendarUnit fromDate:date];
+    NSString *weekDay = [NSString stringWithFormat:@"%@", @([comps weekday])];
+    
+    return weekDay;
+}
+
 @end
