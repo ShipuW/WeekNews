@@ -10,14 +10,14 @@
 
 @implementation FxBaseCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-
+- (void)initCell
+{
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
+- (void)setCellData:(BaseInfo *)info
+{
+    self.cellInfo = info;
+    _titleLabel.text = info.name;//每个cell都有title
 }
 
 @end

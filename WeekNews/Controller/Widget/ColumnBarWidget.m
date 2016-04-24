@@ -16,45 +16,48 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     _btnHelper = [[FxButtonHelper alloc] init];
     self.listData = [NSMutableArray array];
     
     //[self requestServerOp];//网络获取column数据
     [self getPlistData];//plist获取column数据
-    [super viewDidLoad];
+    
 }
 
 
-#pragma 不同获取column数据方法
+#pragma mark - 不同获取column数据方法
 - (void)getPlistData//列按周排列,从Plist中获取固定值
 {
-    NSMutableArray *plistData = [[NSMutableArray alloc] init];
-    plistData = [NSMutableArray array];
-    plistData = [ColumnInfo columnItems];
-    self.listData = plistData;
+//    NSMutableArray *plistData = [[NSMutableArray alloc] init];
+//    plistData = [NSMutableArray array];
+//    plistData = [ColumnInfo columnItems];
+//    self.listData = plistData;
+    self.listData = [ColumnInfo columnItems];
     [self updateUI];
     self.pageIndex = [[FxDate getWeekDay:[NSDate date]] intValue] - 1;//获取当前星期数
-}
-
-
-- (void)requestServerOp//获取网络column数据
-{
-    NSDictionary *dictInfo = @{@"url":ColumnURL,
-                               @"body":@"1"
-                               };
     
-    _operation = [[FxGetColumn alloc] initWithDelegate:self opInfo:dictInfo];
-    [_operation executeOp];
 }
 
-- (void)opSuccess:(NSMutableArray *)data//
-{
-    [super opSuccess:data];
-    self.listData = data;
-    [self updateUI];
-    self.pageIndex = 0;
-}
-#pragma end
+
+//- (void)requestServerOp//获取网络column数据
+//{
+//    NSDictionary *dictInfo = @{@"url":ColumnURL,
+//                               @"body":@"1"
+//                               };
+//    
+//    _operation = [[FxGetColumn alloc] initWithDelegate:self opInfo:dictInfo];
+//    [_operation executeOp];
+//}
+//
+//- (void)opSuccess:(NSMutableArray *)data//
+//{
+//    [super opSuccess:data];
+//    self.listData = data;
+//    [self updateUI];
+//    self.pageIndex = 0;
+//}
+#pragma mark - end
 
 
 - (void)updateUI//更新页面
@@ -110,7 +113,7 @@
               normalColor:[UIColor blackColor]
             selectedColor:[UIColor redColor]];
     
-    [self.delegate didSelect:_pageIndex];
+    [self.delegate didSelect:_pageIndex];//轮到代理实现内容
 }
 
 - (void)setPageIndex:(NSInteger)pageIndex

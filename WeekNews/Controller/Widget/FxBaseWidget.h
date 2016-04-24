@@ -12,8 +12,8 @@
 
 @property(strong, nonatomic) NSMutableArray    *listData;
 
-//- (void)updateUI;
-//- (void)reloadData;
-//- (BOOL)isReloadLocalData;
+- (void)updateUI;
+- (void)reloadData;
+- (BOOL)isReloadLocalData;
 
 @end

@@ -8,6 +8,9 @@
 
 #import "FxBaseCell.h"
 
-@interface NewsCell : FxBaseCell
+@interface NewsCell : FxBaseCell{
+    IBOutlet UIImageView    *_imageView;
+    IBOutlet UILabel        *_descLabel;
+}
 
 @end
