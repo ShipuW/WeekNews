@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wHZ-ad-S2R">
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHZ-ad-S2R">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                     <connections>
@@ -25,6 +25,14 @@
                 </webView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wHZ-ad-S2R" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="C4d-6u-D23"/>
+                <constraint firstItem="wHZ-ad-S2R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NtL-jo-bsH"/>
+                <constraint firstItem="wHZ-ad-S2R" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Oqa-N8-eX7"/>
+                <constraint firstAttribute="bottom" secondItem="wHZ-ad-S2R" secondAttribute="bottom" id="Y2a-GJ-Ytb"/>
+                <constraint firstAttribute="trailing" secondItem="wHZ-ad-S2R" secondAttribute="trailing" id="nyJ-4e-Sct"/>
+                <constraint firstItem="wHZ-ad-S2R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qxm-YR-7b1"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>

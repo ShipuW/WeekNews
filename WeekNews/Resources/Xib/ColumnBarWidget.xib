@@ -16,11 +16,19 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LwU-Af-4ye">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwU-Af-4ye">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="X25-Ld-tvG"/>
+                    </constraints>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LwU-Af-4ye" secondAttribute="trailing" id="COi-Q8-37W"/>
+                <constraint firstItem="LwU-Af-4ye" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="J8f-59-kMf"/>
+                <constraint firstItem="LwU-Af-4ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XsP-jp-3Zy"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>

@@ -14,16 +14,30 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正在载入" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mg-wb-R1w">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="beG-0X-q00">
+                        <rect key="frame" x="85" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="OF8-I8-Esu"/>
+                            <constraint firstAttribute="height" constant="20" id="RKi-BK-w4y"/>
+                        </constraints>
+                    </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在载入" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mg-wb-R1w">
+                        <rect key="frame" x="116" y="10" width="89" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="89" id="EUq-RO-UBq"/>
+                            <constraint firstAttribute="height" constant="23" id="Wdt-Fm-RdS"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="beG-0X-q00">
-                        <rect key="frame" x="85" y="12" width="20" height="20"/>
-                    </activityIndicatorView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="8mg-wb-R1w" firstAttribute="leading" secondItem="beG-0X-q00" secondAttribute="trailing" constant="11" id="49u-vm-4TN"/>
+                    <constraint firstItem="8mg-wb-R1w" firstAttribute="centerY" secondItem="X7w-N0-wXa" secondAttribute="centerY" id="HCm-v7-Bw3"/>
+                    <constraint firstItem="8mg-wb-R1w" firstAttribute="centerX" secondItem="X7w-N0-wXa" secondAttribute="centerX" id="VEH-OP-Pub"/>
+                    <constraint firstItem="beG-0X-q00" firstAttribute="centerY" secondItem="X7w-N0-wXa" secondAttribute="centerY" id="cOJ-7h-P7X"/>
+                </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="260" y="200"/>
         </tableViewCell>

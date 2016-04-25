@@ -19,20 +19,32 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="新闻一周见" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ8-eS-zs2">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻一周见" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ8-eS-zs2">
                     <rect key="frame" x="118" y="169" width="85" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="jCx-F1-9eg"/>
+                        <constraint firstAttribute="width" constant="85" id="vN4-ZO-ZoD"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="v1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqw-Vb-aUU">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqw-Vb-aUU">
                     <rect key="frame" x="145" y="198" width="31" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="HQp-W3-grp"/>
+                        <constraint firstAttribute="height" constant="21" id="xoH-Gq-cyV"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O5-pf-eEe">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O5-pf-eEe">
                     <rect key="frame" x="92" y="258" width="136" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="V8q-7j-yPW"/>
+                        <constraint firstAttribute="width" constant="136" id="w21-cx-5LY"/>
+                    </constraints>
                     <state key="normal" title="退出登录" backgroundImage="login_button.png">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,11 +53,25 @@
                         <action selector="tapLoginButton:" destination="-1" eventType="touchUpInside" id="OBr-5H-HWh"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon60.png" translatesAutoresizingMaskIntoConstraints="NO" id="evv-iM-oob">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon60.png" translatesAutoresizingMaskIntoConstraints="NO" id="evv-iM-oob">
                     <rect key="frame" x="130" y="101" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="V6E-uy-vNF"/>
+                        <constraint firstAttribute="height" constant="60" id="ytr-6v-pBh"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="6O5-pf-eEe" firstAttribute="top" secondItem="eqw-Vb-aUU" secondAttribute="bottom" constant="39" id="1JP-dg-tR4"/>
+                <constraint firstItem="eqw-Vb-aUU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="B1o-Qd-9H6"/>
+                <constraint firstItem="evv-iM-oob" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="101" id="Pt9-7u-0LN"/>
+                <constraint firstItem="eqw-Vb-aUU" firstAttribute="top" secondItem="bQ8-eS-zs2" secondAttribute="bottom" constant="8" id="RgK-UZ-1kW"/>
+                <constraint firstItem="bQ8-eS-zs2" firstAttribute="top" secondItem="evv-iM-oob" secondAttribute="bottom" constant="8" id="Z6X-We-T4R"/>
+                <constraint firstItem="bQ8-eS-zs2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kq8-Rc-HES"/>
+                <constraint firstItem="6O5-pf-eEe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mMi-mh-ErR"/>
+                <constraint firstItem="evv-iM-oob" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vln-eS-4k6"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>

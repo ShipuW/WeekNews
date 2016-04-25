@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,22 +15,42 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZv-mB-X5D">
-                        <rect key="frame" x="76" y="10" width="236" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZv-mB-X5D">
+                        <rect key="frame" x="76" y="10" width="236" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Liy-wt-JPt"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NewsDefault.png" translatesAutoresizingMaskIntoConstraints="NO" id="xBq-HZ-qCs">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewsDefault.png" translatesAutoresizingMaskIntoConstraints="NO" id="xBq-HZ-qCs">
                         <rect key="frame" x="8" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="3M9-b3-dkn"/>
+                            <constraint firstAttribute="height" constant="60" id="fhi-Tp-bxb"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZG-Eb-cuh">
-                        <rect key="frame" x="76" y="29" width="236" height="41"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZG-Eb-cuh">
+                        <rect key="frame" x="76" y="31" width="236" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="QJo-5D-EIz"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="qZG-Eb-cuh" firstAttribute="leading" secondItem="xBq-HZ-qCs" secondAttribute="trailing" constant="8" id="Fdd-Ht-FT2"/>
+                    <constraint firstItem="qZG-Eb-cuh" firstAttribute="trailing" secondItem="2b6-Y9-nXC" secondAttribute="trailingMargin" id="PJY-oM-jik"/>
+                    <constraint firstItem="ZZv-mB-X5D" firstAttribute="top" secondItem="2b6-Y9-nXC" secondAttribute="topMargin" constant="2" id="Pac-lw-aHe"/>
+                    <constraint firstItem="xBq-HZ-qCs" firstAttribute="leading" secondItem="2b6-Y9-nXC" secondAttribute="leadingMargin" id="UuA-QC-Hz4"/>
+                    <constraint firstItem="ZZv-mB-X5D" firstAttribute="trailing" secondItem="2b6-Y9-nXC" secondAttribute="trailingMargin" id="VDA-We-OPx"/>
+                    <constraint firstItem="xBq-HZ-qCs" firstAttribute="top" secondItem="2b6-Y9-nXC" secondAttribute="topMargin" constant="2" id="VmY-I6-bw7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qZG-Eb-cuh" secondAttribute="bottom" id="bk1-RO-blL"/>
+                    <constraint firstItem="ZZv-mB-X5D" firstAttribute="leading" secondItem="xBq-HZ-qCs" secondAttribute="trailing" constant="8" id="eWY-Mh-VoO"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="_descLabel" destination="qZG-Eb-cuh" id="BI5-2v-gTb"/>
