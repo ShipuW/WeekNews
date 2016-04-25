@@ -20,7 +20,7 @@
 #define BaseHost    @"http://wangshipu001.eicp.net"
 #define BasePort    @"80"
 #else
-#define BaseHost    @"http://wangshipu001.eicp.net" //127.0.0.1/192.168.191.1/wangshipu001.eicp.net
+#define BaseHost    @"http://127.0.0.1" //127.0.0.1/192.168.191.1/wangshipu001.eicp.net
 #define BasePort    @":80"
 #endif
 
@@ -32,6 +32,7 @@
 #define LoginURL    BaseURL "login.json"
 #define AdvertURL   BaseURL "advert.json?width=%ld&height=%ld"
 #define ColumnURL   BaseURL "column.json"
+#define CategoryURL BaseURL "category.json"
 #define NewsURLFmt  BaseURL "news_%@.json"
 #define DetailURLFmt BaseServer2 "%@/full.html"
 #define ChartURL    BaseURL "chart.json"

@@ -27,7 +27,7 @@
         [self requestServer];
     }
     else {
-        [self requestServerOp];
+        [self requestServerOp];//实施子类中网络请求方法
         [self updateUI];
     }
 }
