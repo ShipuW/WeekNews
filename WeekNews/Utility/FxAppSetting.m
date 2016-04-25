@@ -25,4 +25,12 @@
     [userDef synchronize];
 }
 
++ (void)removeValue:(NSString *)key
+{
+    NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+    
+    [userDef removeObjectForKey:key];
+    [userDef synchronize];
+}
+
 @end

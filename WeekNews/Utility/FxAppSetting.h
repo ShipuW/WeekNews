@@ -12,5 +12,7 @@
 
 + (NSString *)getValue:(NSString *)key;
 + (void)setValue:(id)value forKey:(NSString *)key;
++ (void)removeValue:(NSString *)key;
+
 
 @end

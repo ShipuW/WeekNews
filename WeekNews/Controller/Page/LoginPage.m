@@ -62,6 +62,9 @@
     [super opSuccess:data];
     BASE_INFO_FUN(data.name);
     BASE_INFO_FUN(data.token);
+    
+    [FxAppSetting setValue:data.token forKey:@"token"];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

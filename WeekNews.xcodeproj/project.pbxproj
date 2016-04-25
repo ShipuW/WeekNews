@@ -18,6 +18,7 @@
 		8402E7D21CCEA9E0008CF3C6 /* SingleNewsPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8402E7D11CCEA9E0008CF3C6 /* SingleNewsPage.xib */; };
 		8402E7D51CCEB674008CF3C6 /* SingleNewsWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 8402E7D41CCEB674008CF3C6 /* SingleNewsWidget.m */; };
 		8402E7D71CCEB6A7008CF3C6 /* SingleNewsWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8402E7D61CCEB6A7008CF3C6 /* SingleNewsWidget.xib */; };
+		8402E7D91CCEBFCF008CF3C6 /* MyPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8402E7D81CCEBFCF008CF3C6 /* MyPage.xib */; };
 		841E4A2D1CCC8E34008D6D80 /* DiscoveryIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841E4A201CCC8E34008D6D80 /* DiscoveryIcon@2x.png */; };
 		841E4A2E1CCC8E34008D6D80 /* DiscoveryIconSelect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841E4A211CCC8E34008D6D80 /* DiscoveryIconSelect@2x.png */; };
 		841E4A2F1CCC8E34008D6D80 /* MyIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841E4A221CCC8E34008D6D80 /* MyIcon@2x.png */; };
@@ -173,6 +174,7 @@
 		8402E7D31CCEB674008CF3C6 /* SingleNewsWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleNewsWidget.h; sourceTree = "<group>"; };
 		8402E7D41CCEB674008CF3C6 /* SingleNewsWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleNewsWidget.m; sourceTree = "<group>"; };
 		8402E7D61CCEB6A7008CF3C6 /* SingleNewsWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleNewsWidget.xib; sourceTree = "<group>"; };
+		8402E7D81CCEBFCF008CF3C6 /* MyPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPage.xib; sourceTree = "<group>"; };
 		841E4A201CCC8E34008D6D80 /* DiscoveryIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DiscoveryIcon@2x.png"; sourceTree = "<group>"; };
 		841E4A211CCC8E34008D6D80 /* DiscoveryIconSelect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DiscoveryIconSelect@2x.png"; sourceTree = "<group>"; };
 		841E4A221CCC8E34008D6D80 /* MyIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyIcon@2x.png"; sourceTree = "<group>"; };
@@ -770,6 +772,7 @@
 				8402E7CA1CCEA39D008CF3C6 /* FavoriteCategoryWidget.xib */,
 				8402E7D11CCEA9E0008CF3C6 /* SingleNewsPage.xib */,
 				8402E7D61CCEB6A7008CF3C6 /* SingleNewsWidget.xib */,
+				8402E7D81CCEBFCF008CF3C6 /* MyPage.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -991,6 +994,7 @@
 				848D58961CCD49FA00845671 /* NewsMoreCell.xib in Resources */,
 				84E385FC1CCB75E400D36324 /* login_username_icon@2x.png in Resources */,
 				841E4A311CCC8E34008D6D80 /* NewsIcon@2x.png in Resources */,
+				8402E7D91CCEBFCF008CF3C6 /* MyPage.xib in Resources */,
 				841E4A351CCC8E34008D6D80 /* tabbar_icon_media_highlight@2x.png in Resources */,
 				841E4A3D1CCC93FA008D6D80 /* TabBarPages.plist in Resources */,
 				841E4A511CCCB763008D6D80 /* ColumnsItems.plist in Resources */,

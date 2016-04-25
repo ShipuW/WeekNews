@@ -6,8 +6,16 @@
 //  Copyright © 2016年 admin. All rights reserved.
 //
 
-#import "FxBasePage.h"
+#import "FxBaseNavPage.h"
+#import "FxAppSetting.h"
 
-@interface MyPage : FxBasePage
+
+@interface MyPage : FxBaseNavPage{
+    IBOutlet UIImageView    *_logoImage;
+    IBOutlet UILabel        *_appName;
+    IBOutlet UILabel        *_appVersion;
+    IBOutlet UIButton       *_loginButton;
+    NSString                *_token;
+}
 
 @end

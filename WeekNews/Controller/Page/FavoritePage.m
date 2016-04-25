@@ -9,6 +9,7 @@
 #import "FavoritePage.h"
 #import "CategoryInfo.h"
 #import "SingleNewsPage.h"
+#import "FxAppSetting.h"
 
 @implementation FavoritePage
 
@@ -21,10 +22,13 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    if (_categoryWidget == nil) {
-       [self addCategoryWidget];
+    if([FxAppSetting getValue:@"token"] != nil){
+        if (_categoryWidget == nil) {
+            [self addCategoryWidget];
+        }
+    }else{
+        [self showIndicator:@"请先登录" autoHide:YES afterDelay:YES];
     }
-    
 }
 - (void)didReceiveMemoryWarning
 {

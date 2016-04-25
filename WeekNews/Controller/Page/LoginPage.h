@@ -6,9 +6,10 @@
 //  Copyright © 2016年 admin. All rights reserved.
 //
 
-#import "FxBasePage.h"
+#import "FxBaseNavPage.h"
+#import "FxAppSetting.h"
 
-@interface LoginPage : FxBasePage
+@interface LoginPage : FxBaseNavPage
 {
     IBOutlet UITextField *_userName;
     IBOutlet UITextField *_password;
