@@ -99,7 +99,7 @@
     SendMessageToWXReq* req = [[SendMessageToWXReq alloc] init];
     req.message = message;
     req.bText = NO;
-    req.scene = WXSceneTimeline;
+    req.scene = WXSceneSession;//选择分享途径
     
     if (![WXApi sendReq:req]) {
         [self showIndicator:@"未安装微信" autoHide:YES afterDelay:YES];
