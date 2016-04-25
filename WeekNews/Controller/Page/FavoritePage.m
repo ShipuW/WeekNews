@@ -8,6 +8,7 @@
 
 #import "FavoritePage.h"
 #import "CategoryInfo.h"
+#import "SingleNewsPage.h"
 
 @implementation FavoritePage
 
@@ -41,8 +42,12 @@
 }
 
 #pragma mark - FavoriteCategoryDelegate
-- (void)didSelect:(NSInteger)categoryIndex{
-
+- (void)didSelect:(CategoryInfo*)categoryInfo{
+    SingleNewsPage *page = [[SingleNewsPage alloc] init];
+    
+    page.categoryInfo = categoryInfo;
+    page.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:page animated:YES];
 
 }
 

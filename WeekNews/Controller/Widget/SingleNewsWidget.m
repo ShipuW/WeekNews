@@ -1,29 +1,26 @@
 //
-//  NewsWidget.m
+//  SingleNewsWidget.m
 //  WeekNews
 //
-//  Created by admin on 16/4/23.
+//  Created by admin on 16/4/26.
 //  Copyright © 2016年 admin. All rights reserved.
 //
 
-#import "NewsWidget.h"
+#import "SingleNewsWidget.h"
 #import "FxGetNews.h"
 #import "FxBaseCell.h"
 #import "DetailPage.h"
-#import "FxDate.h"
-//#import "DetailChartPage.h"
-//#import "FxDBManager.h"
 
-@implementation NewsWidget
+
+@implementation SingleNewsWidget
 
 - (void)viewDidLoad
 {
     self.cellIdentifier = @"NewsCell";
     _cellHeight = 80;
-    _pageIndex = 0;//[[FxDate getWeekDay:[NSDate date]] intValue] - 1;;
+    _pageIndex = 0;
     _hasNextPage = NO;
     self.listData = [[NSMutableArray alloc] init];
-    //_baseInfo = (_columnInfo==nil ? _categoryInfo : _columnInfo);
     [super viewDidLoad];
 }
 
@@ -39,22 +36,13 @@
     [super reloadData];
 }
 
-//- (BOOL)isReloadLocalData
-//{
-//    NSArray *datas = [FxDBManager fetchNews:self.columnInfo.ID];
-//    
-//    [self.listData addObjectsFromArray:datas];
-//    
-//    return [super isReloadLocalData];
-//}
-
 - (void)requestServerOp
 {
     
-    NSString *url = [NSString stringWithFormat:NewsURLFmt,
-                     self.columnInfo.ID];
+    NSString *url = [NSString stringWithFormat:CategoryURLFmt,
+                     self.categoryInfo.ID];
     NSDictionary *dictInfo = @{@"url":url,
-                               @"body":self.columnInfo.ID,
+                               @"body":self.categoryInfo.ID,
                                };
     
     _operation = [[FxGetNews alloc] initWithDelegate:self opInfo:dictInfo];
@@ -63,8 +51,8 @@
 
 - (void)requestNextPageServerOp
 {
-    NSString *url = [NSString stringWithFormat:NewsURLFmt,
-                     self.columnInfo.ID];
+    NSString *url = [NSString stringWithFormat:CategoryURLFmt,
+                     self.categoryInfo.ID];
     NSString *body = [NSString stringWithFormat:@"pageindex=%@",@(_pageIndex)];
     NSDictionary *dictInfo = @{@"url":url,
                                @"body":body
@@ -113,7 +101,7 @@
         cellIdentifier = @"NewsMoreCell";
         [self requestNextPageServerOp];
     }
-
+    
     FxBaseCell *cell = (FxBaseCell*)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil) {
@@ -133,10 +121,11 @@
     DetailPage *page = [[DetailPage alloc] init];
     
     page.newsInfo = [self.listData objectAtIndex:indexPath.row];
-    page.hidesBottomBarWhenPushed = YES;
-    
+ 
+#pragma mark - self 是一个普通controller没有navigation ，只有page有navigation，所以先找到他所属page
     UIViewController *owner =  self.owner;
     [owner.navigationController pushViewController:page animated:YES];
 }
 
 @end
+

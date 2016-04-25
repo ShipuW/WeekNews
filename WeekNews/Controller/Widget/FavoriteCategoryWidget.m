@@ -8,7 +8,6 @@
 
 #import "FavoriteCategoryWidget.h"
 #import "FxGetCategory.h"
-#import "CategoryInfo.h"
 
 @implementation FavoriteCategoryWidget
 
@@ -88,6 +87,6 @@
 {
     _categoryIndex = sender.tag -1;
     
-    [self.delegate didSelect:_categoryIndex];//轮到代理实现内容
+    [self.delegate didSelect:[self.listData objectAtIndex:_categoryIndex]];//轮到代理实现内容
 }
 @end

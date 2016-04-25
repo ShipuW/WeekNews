@@ -7,7 +7,7 @@
 //
 
 #import "FxBaseWidget.h"
-
+#import "CategoryInfo.h"
 
 @protocol FavoriteCategoryDelegate;
 @interface FavoriteCategoryWidget : FxBaseWidget{
@@ -21,6 +21,6 @@
 
 @protocol FavoriteCategoryDelegate <NSObject>
 
-- (void)didSelect:(NSInteger)categoryIndex;
+- (void)didSelect:(CategoryInfo*)categoryInfo;
 
 @end

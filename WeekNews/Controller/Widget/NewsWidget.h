@@ -8,6 +8,7 @@
 
 #import "FxTableWidget.h"
 #import "ColumnInfo.h"
+#import "CategoryInfo.h"
 
 @interface NewsWidget : FxTableWidget {
     BOOL        _hasNextPage;
