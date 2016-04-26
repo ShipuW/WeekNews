@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsPage">
             <connections>
                 <outlet property="_barBackView" destination="qDj-fF-mtW" id="kC3-JU-pHc"/>
+                <outlet property="_tableView" destination="5ga-KU-lf2" id="gv5-vP-cPL"/>
                 <outlet property="view" destination="iN0-l3-epB" id="cR2-Zp-Rx1"/>
             </connections>
         </placeholder>
@@ -16,20 +17,52 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qDj-fF-mtW">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDj-fF-mtW">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ColumnBarRight.png" translatesAutoresizingMaskIntoConstraints="NO" id="Un7-q9-f2A">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ColumnBarRight.png" translatesAutoresizingMaskIntoConstraints="NO" id="Un7-q9-f2A">
                             <rect key="frame" x="275" y="0.0" width="45" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="AnR-K3-tgG"/>
+                                <constraint firstAttribute="width" constant="45" id="My0-cq-NSg"/>
+                            </constraints>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ColumnBarLeft.png" translatesAutoresizingMaskIntoConstraints="NO" id="nzz-cu-t21">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ColumnBarLeft.png" translatesAutoresizingMaskIntoConstraints="NO" id="nzz-cu-t21">
                             <rect key="frame" x="0.0" y="0.0" width="45" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="R0T-XZ-eIA"/>
+                                <constraint firstAttribute="width" constant="45" id="WcW-pu-3VV"/>
+                            </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Un7-q9-f2A" firstAttribute="top" secondItem="qDj-fF-mtW" secondAttribute="top" id="37D-zp-EZa"/>
+                        <constraint firstItem="nzz-cu-t21" firstAttribute="top" secondItem="qDj-fF-mtW" secondAttribute="top" id="FV9-0B-TkB"/>
+                        <constraint firstItem="nzz-cu-t21" firstAttribute="leading" secondItem="qDj-fF-mtW" secondAttribute="leading" id="lwP-DB-23o"/>
+                        <constraint firstAttribute="height" constant="36" id="m8v-aV-Hxh"/>
+                        <constraint firstAttribute="trailing" secondItem="Un7-q9-f2A" secondAttribute="trailing" id="qxw-bR-3Ea"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ga-KU-lf2" customClass="FxLandscapeTableView">
+                    <rect key="frame" x="0.0" y="36" width="320" height="483"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bI8-4K-LXl"/>
+                        <outlet property="delegate" destination="-1" id="CD5-1g-jpl"/>
+                    </connections>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qDj-fF-mtW" secondAttribute="trailing" id="3w2-Me-vty"/>
+                <constraint firstAttribute="trailing" secondItem="5ga-KU-lf2" secondAttribute="trailing" id="DYR-lK-TCV"/>
+                <constraint firstItem="qDj-fF-mtW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IoL-Xu-q1Z"/>
+                <constraint firstItem="qDj-fF-mtW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LOD-E4-HhH"/>
+                <constraint firstAttribute="bottom" secondItem="5ga-KU-lf2" secondAttribute="bottom" constant="49" id="bJx-pQ-1r9"/>
+                <constraint firstItem="5ga-KU-lf2" firstAttribute="top" secondItem="qDj-fF-mtW" secondAttribute="bottom" id="rBA-kl-dhs"/>
+                <constraint firstItem="5ga-KU-lf2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sFf-mP-yhs"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
