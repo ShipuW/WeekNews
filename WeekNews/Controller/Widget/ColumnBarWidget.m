@@ -127,13 +127,13 @@
 
 - (void)setColumnTabCenter:(CGRect)frame {//点击之后居中
     
-    CGFloat xOffer = frame.origin.x - _scrollView.contentOffset.x - 320/2;
+    CGFloat xOffer = frame.origin.x - _scrollView.contentOffset.x - self.view.frame.size.width/2;
     xOffer = _scrollView.contentOffset.x+xOffer+frame.size.width/2;
     
     if (xOffer < 18)
         xOffer = -18;
-    else if (xOffer + 320 > _scrollView.contentSize.width)
-        xOffer = _scrollView.contentSize.width - 320+18;
+    else if (xOffer + self.view.frame.size.width > _scrollView.contentSize.width)
+        xOffer = _scrollView.contentSize.width - self.view.frame.size.width+18;
     
     if (xOffer <= 0)
         xOffer = -18;
