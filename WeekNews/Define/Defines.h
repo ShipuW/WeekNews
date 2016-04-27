@@ -106,7 +106,7 @@ selector:_selector name:_name object:nil];
 #define NofifyNewsIcon      @"NewsIcon"
 
 // 微信
-#define WXAppID             @"wx76ffeeea1020dfc1"
+#define WXAppID             @"wxb5713bb26f06f413"
 
 // 小米推送key
 #define MiPushRegister      @"registerMiPush:"
