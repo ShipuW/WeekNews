@@ -18,10 +18,10 @@
 
 #if ProductType == 0
 #define BaseHost    @"http://wangshipu001.eicp.net"
-#define BasePort    @"80"
-#else
-#define BaseHost    @"http://127.0.0.1" //127.0.0.1/192.168.191.1/wangshipu001.eicp.net
 #define BasePort    @":80"
+#else
+#define BaseHost    @"http://wangshipu001.eicp.net" //127.0.0.1/192.168.191.1/wangshipu001.eicp.net
+#define BasePort    @""//此处若为172或192需要加:80 wangshipu001不用.80
 #endif
 
 #define BaseServer  BaseHost BasePort
@@ -36,14 +36,3 @@
 #define NewsURLFmt  BaseURL "news_%@.json"
 #define CategoryURLFmt  BaseURL "category_%@.json"
 #define DetailURLFmt BaseServer2 "%@/full.html"
-#define ChartURL    BaseURL "chart.json"
-#define H5URL       BaseURL "H5/content.html"
-
-#define CityCodeURLFmt  @"http://apistore.baidu.com/microservice/cityinfo?cityname=%@"
-
-// k78 URL
-#define WeatherFmt      @"&format=json"
-#define WeatherKey      @"10003"
-#define WeatherSign     @"b59bc3ef6191eb9f747dd4e83c99f2a4"
-#define WeatherHost     @"http://api.k780.com:88/"
-#define WeatherRealFmt  WeatherHost "?app=weather.today&weaid=%@&appkey=" WeatherKey "&sign=" WeatherSign WeatherFmt
