@@ -50,6 +50,10 @@
 		841E4A651CCCD5DC008D6D80 /* WeatherShare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841E4A601CCCD5DC008D6D80 /* WeatherShare@2x.png */; };
 		841E4A681CCCD778008D6D80 /* FxLandscapeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E4A671CCCD778008D6D80 /* FxLandscapeCell.m */; };
 		841E4A6B1CCCD965008D6D80 /* NewsLandscapeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E4A6A1CCCD965008D6D80 /* NewsLandscapeCell.m */; };
+		84625EE21CE46624008FD181 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84625EE11CE46624008FD181 /* libsqlite3.tbd */; };
+		84625EE71CE4672C008FD181 /* FxDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84625EE41CE4672C008FD181 /* FxDBManager.m */; };
+		84625EE81CE4672C008FD181 /* FxDBManager+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 84625EE61CE4672C008FD181 /* FxDBManager+Private.m */; };
+		84625EEA1CE469D1008FD181 /* FxDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84625EE91CE469D1008FD181 /* FxDB.framework */; };
 		848D58911CCD1C8600845671 /* NewsWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D58901CCD1C8600845671 /* NewsWidget.xib */; };
 		848D58941CCD498D00845671 /* NewsMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D58931CCD498D00845671 /* NewsMoreCell.m */; };
 		848D58961CCD49FA00845671 /* NewsMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848D58951CCD49FA00845671 /* NewsMoreCell.xib */; };
@@ -210,6 +214,12 @@
 		841E4A671CCCD778008D6D80 /* FxLandscapeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxLandscapeCell.m; sourceTree = "<group>"; };
 		841E4A691CCCD965008D6D80 /* NewsLandscapeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsLandscapeCell.h; sourceTree = "<group>"; };
 		841E4A6A1CCCD965008D6D80 /* NewsLandscapeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsLandscapeCell.m; sourceTree = "<group>"; };
+		84625EE11CE46624008FD181 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		84625EE31CE4672C008FD181 /* FxDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxDBManager.h; sourceTree = "<group>"; };
+		84625EE41CE4672C008FD181 /* FxDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxDBManager.m; sourceTree = "<group>"; };
+		84625EE51CE4672C008FD181 /* FxDBManager+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FxDBManager+Private.h"; sourceTree = "<group>"; };
+		84625EE61CE4672C008FD181 /* FxDBManager+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FxDBManager+Private.m"; sourceTree = "<group>"; };
+		84625EE91CE469D1008FD181 /* FxDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FxDB.framework; sourceTree = "<group>"; };
 		848D58901CCD1C8600845671 /* NewsWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsWidget.xib; sourceTree = "<group>"; };
 		848D58921CCD498D00845671 /* NewsMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsMoreCell.h; sourceTree = "<group>"; };
 		848D58931CCD498D00845671 /* NewsMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsMoreCell.m; sourceTree = "<group>"; };
@@ -365,9 +375,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84625EE21CE46624008FD181 /* libsqlite3.tbd in Frameworks */,
 				848D58CC1CCD709200845671 /* CoreLocation.framework in Frameworks */,
 				848D58CA1CCD708600845671 /* MobileCoreServices.framework in Frameworks */,
 				848D58C81CCD707A00845671 /* libstdc++.tbd in Frameworks */,
+				84625EEA1CE469D1008FD181 /* FxDB.framework in Frameworks */,
 				848D58C61CCD704400845671 /* CoreTelephony.framework in Frameworks */,
 				848D58C41CCD6BE900845671 /* libsqlite3.0.tbd in Frameworks */,
 				848D58C21CCD6BD700845671 /* libz.tbd in Frameworks */,
@@ -491,6 +503,8 @@
 		84E3851F1CCB3B6600D36324 /* WeekNews */ = {
 			isa = PBXGroup;
 			children = (
+				84E385231CCB3B6600D36324 /* AppDelegate.h */,
+				84E385241CCB3B6600D36324 /* AppDelegate.m */,
 				84E385541CCB3C1500D36324 /* Global */,
 				84E385551CCB3C2300D36324 /* View */,
 				84E385561CCB3C3000D36324 /* Model */,
@@ -499,8 +513,6 @@
 				84E385591CCB3C7800D36324 /* Utility */,
 				84E3855A1CCB3C9400D36324 /* ThirdSDK */,
 				84E385641CCB408B00D36324 /* Define */,
-				84E385231CCB3B6600D36324 /* AppDelegate.h */,
-				84E385241CCB3B6600D36324 /* AppDelegate.m */,
 				84E3855D1CCB3D1E00D36324 /* Resources */,
 				84E385201CCB3B6600D36324 /* Supporting Files */,
 			);
@@ -611,6 +623,10 @@
 		84E385581CCB3C5F00D36324 /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				84625EE31CE4672C008FD181 /* FxDBManager.h */,
+				84625EE41CE4672C008FD181 /* FxDBManager.m */,
+				84625EE51CE4672C008FD181 /* FxDBManager+Private.h */,
+				84625EE61CE4672C008FD181 /* FxDBManager+Private.m */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -639,6 +655,8 @@
 		84E3855A1CCB3C9400D36324 /* ThirdSDK */ = {
 			isa = PBXGroup;
 			children = (
+				84625EE91CE469D1008FD181 /* FxDB.framework */,
+				84625EE11CE46624008FD181 /* libsqlite3.tbd */,
 				848D58CB1CCD709200845671 /* CoreLocation.framework */,
 				848D58C91CCD708600845671 /* MobileCoreServices.framework */,
 				848D58C71CCD707A00845671 /* libstdc++.tbd */,
@@ -1025,6 +1043,7 @@
 				84E3860E1CCB91C000D36324 /* FxActivityIndicator.m in Sources */,
 				84E3858E1CCB5D0200D36324 /* FxBaseController.m in Sources */,
 				84E385861CCB591C00D36324 /* AdvertInfo.m in Sources */,
+				84625EE71CE4672C008FD181 /* FxDBManager.m in Sources */,
 				84E385AD1CCB602000D36324 /* FxJsonParser.m in Sources */,
 				84E385C11CCB6D4E00D36324 /* NewsPage.m in Sources */,
 				84E3860F1CCB91C000D36324 /* FxAppSetting.m in Sources */,
@@ -1061,6 +1080,7 @@
 				84E385E81CCB720100D36324 /* FxLogin.m in Sources */,
 				848D58A51CCD550500845671 /* FxBaseWebPage.m in Sources */,
 				84E385BB1CCB697700D36324 /* FxGetNews.m in Sources */,
+				84625EE81CE4672C008FD181 /* FxDBManager+Private.m in Sources */,
 				84E385D31CCB6EC500D36324 /* ColumnBarWidget.m in Sources */,
 				841E4A581CCCD261008D6D80 /* FxLandscapeTableView.m in Sources */,
 				848D589F1CCD53BB00845671 /* ContentImageInfo.m in Sources */,
@@ -1203,6 +1223,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeekNews/ThirdSDK",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = WeekNews/PrefixHeader.pch;
 				INFOPLIST_FILE = WeekNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1220,6 +1246,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeekNews/ThirdSDK",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = WeekNews/PrefixHeader.pch;
 				INFOPLIST_FILE = WeekNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1321,6 +1353,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeekNews/ThirdSDK",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = WeekNews/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "OFFICIAL=1";
 				INFOPLIST_FILE = WeekNews/Info.plist;
@@ -1400,6 +1438,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeekNews/ThirdSDK",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = WeekNews/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "OFFICIAL=1";
 				INFOPLIST_FILE = WeekNews/Info.plist;
@@ -1479,6 +1523,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeekNews/ThirdSDK",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = WeekNews/PrefixHeader.pch;
 				INFOPLIST_FILE = WeekNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

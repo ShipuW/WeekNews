@@ -8,15 +8,30 @@
 
 #import "FavoriteCategoryWidget.h"
 #import "FxGetCategory.h"
+#import "FxDBManager.h"
 
 @implementation FavoriteCategoryWidget
 
 - (void)viewDidLoad
 {
+    self.listData = [NSMutableArray array];
     [super viewDidLoad];
 }
 
 
+- (BOOL)isReloadLocalData
+{
+    NSArray *datas = [FxDBManager fetchCategorys:@"1"];
+    
+    [self.listData addObjectsFromArray:datas];
+    
+    return [super isReloadLocalData];
+}
+
+- (void)requestServer
+{
+    [self requestServerOp];
+}
 
 - (void)requestServerOp//获取网络column数据
 {

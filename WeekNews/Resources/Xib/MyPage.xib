@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="_appName" destination="bQ8-eS-zs2" id="UAb-4Q-zlu"/>
                 <outlet property="_appVersion" destination="eqw-Vb-aUU" id="MYE-EK-Olz"/>
+                <outlet property="_clearCacheButton" destination="27h-NA-FSa" id="7Wp-Qw-tUp"/>
                 <outlet property="_loginButton" destination="6O5-pf-eEe" id="DUP-AG-Lng"/>
                 <outlet property="_logoImage" destination="evv-iM-oob" id="hXv-JT-ev9"/>
                 <outlet property="view" destination="iN0-l3-epB" id="G0j-wA-fdb"/>
@@ -60,11 +61,26 @@
                         <constraint firstAttribute="height" constant="60" id="ytr-6v-pBh"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27h-NA-FSa">
+                    <rect key="frame" x="92" y="309" width="136" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="136" id="dtb-I4-xKS"/>
+                        <constraint firstAttribute="height" constant="30" id="nEy-s5-Ij2"/>
+                    </constraints>
+                    <state key="normal" title="清除缓存" backgroundImage="login_button.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tapClearButton:" destination="-1" eventType="touchUpInside" id="Bkh-FZ-7D5"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="6O5-pf-eEe" firstAttribute="top" secondItem="eqw-Vb-aUU" secondAttribute="bottom" constant="39" id="1JP-dg-tR4"/>
+                <constraint firstItem="27h-NA-FSa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AR9-hJ-NCx"/>
                 <constraint firstItem="eqw-Vb-aUU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="B1o-Qd-9H6"/>
+                <constraint firstItem="27h-NA-FSa" firstAttribute="top" secondItem="6O5-pf-eEe" secondAttribute="bottom" constant="21" id="CBa-dO-Nwn"/>
                 <constraint firstItem="evv-iM-oob" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="101" id="Pt9-7u-0LN"/>
                 <constraint firstItem="eqw-Vb-aUU" firstAttribute="top" secondItem="bQ8-eS-zs2" secondAttribute="bottom" constant="8" id="RgK-UZ-1kW"/>
                 <constraint firstItem="bQ8-eS-zs2" firstAttribute="top" secondItem="evv-iM-oob" secondAttribute="bottom" constant="8" id="Z6X-We-T4R"/>

@@ -15,6 +15,7 @@
     IBOutlet UILabel        *_appName;
     IBOutlet UILabel        *_appVersion;
     IBOutlet UIButton       *_loginButton;
+    IBOutlet UIButton       *_clearCacheButton;
     NSString                *_token;
 }
 

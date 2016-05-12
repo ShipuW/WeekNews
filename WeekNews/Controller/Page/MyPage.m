@@ -8,6 +8,7 @@
 
 #import "MyPage.h"
 #import "LoginPage.h"
+#import "FxDBManager.h"
 
 @implementation MyPage
 
@@ -43,6 +44,15 @@
     }
     
     
+}
+
+- (IBAction)tapClearButton:(id)sender{
+    [self showIndicator:@"正在清理" autoHide:NO afterDelay:NO];
+    [FxDBManager clearNews];
+    [FxDBManager clearCategorys];
+    NSString *path = [NSString stringWithFormat:@"%@/%@", [FxGlobal getRootPath], CacheImagePath];
+    [FxFileUtility deleteFile:path];
+    [self hideIndicator];
 }
 
 

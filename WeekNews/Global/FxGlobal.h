@@ -10,18 +10,18 @@
 
 @interface FxGlobal : NSObject
 
-//+ (FxGlobal *)global;
-//
++ (FxGlobal *)global;
+
 //// 系统版本
-//+ (BOOL)isSystemLowIOS8;
++ (BOOL)isSystemLowIOS8;
 + (BOOL)isSystemLowIOS7;
-//+ (BOOL)isSystemLowiOS6;
-//+ (NSString *)clientVersion;
-//
++ (BOOL)isSystemLowiOS6;
++ (NSString *)clientVersion;
+
 //// 缓存路径
 + (NSString *)getRootPath;
 + (NSString *)getCacheImage:(NSString *)fileName;
-//+ (NSString *)getUserDBFile;
++ (NSString *)getUserDBFile;
 + (BOOL)setNotBackUp:(NSString *)filePath;
 //
 //// 系统提示

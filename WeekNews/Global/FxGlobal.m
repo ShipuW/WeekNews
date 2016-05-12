@@ -10,6 +10,31 @@
 
 @implementation FxGlobal
 
++ (FxGlobal *)global
+{
+    static FxGlobal *s_global = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        s_global = [[FxGlobal alloc] init];
+    });
+    
+    return s_global;
+}
+
+
+#pragma mark - 系统版本
+
++ (BOOL)isSystemLowIOS8
+{
+    UIDevice *device = [UIDevice currentDevice];
+    CGFloat systemVer = [[device systemVersion] floatValue];
+    if (systemVer - IOSBaseVersion8 < -0.001) {
+        return YES;
+    }
+    
+    return NO;
+}
+
 + (BOOL)isSystemLowIOS7
 {
     UIDevice *device = [UIDevice currentDevice];
@@ -20,6 +45,28 @@
     
     return NO;
 }
+
++ (BOOL)isSystemLowiOS6
+{
+    UIDevice *device = [UIDevice currentDevice];
+    CGFloat systemVer = [[device systemVersion] floatValue];
+    if (systemVer < IOSBaseVersion6) {
+        return YES;
+    }
+    
+    return NO;
+}
+
++ (NSString *)clientVersion
+{
+    NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
+    return [infoDict objectForKey:@"CFBundleShortVersionString"];
+}
+
+
+
+
+#pragma mark - 缓存路径
 
 + (NSString *)getRootPath
 {
@@ -37,6 +84,13 @@
     path = [NSString stringWithFormat:@"%@/%@.jpg", path, fileName];
     
     return path;
+}
+
++ (NSString *)getUserDBFile
+{
+    NSString *path = [FxGlobal getRootPath];
+    
+    return [path stringByAppendingPathComponent:NewsDBFile];
 }
 
 + (BOOL)setNotBackUp:(NSString *)filePath

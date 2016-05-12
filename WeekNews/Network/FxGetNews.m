@@ -8,6 +8,7 @@
 
 #import "FxGetNews.h"
 #import "NewsInfo.h"
+#import "FxDBManager.h"
 
 @implementation FxGetNews
 
@@ -16,8 +17,8 @@
     NSArray *infos = [NewsInfo arrayFromDict:dict];
     [_delegate opSuccess:infos];
     
-    //NSString *columnID = [_opInfo objectForKey:@"body"];
-    //[FxDBManager saveNews:@{@"columnid":columnID,@"json":jsonString}];
+    NSString *columnID = [_opInfo objectForKey:@"body"];
+    [FxDBManager saveNews:@{@"columnid":columnID,@"json":jsonString}];
 }
 
 @end

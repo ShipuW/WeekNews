@@ -12,7 +12,7 @@
 #import "DetailPage.h"
 #import "FxDate.h"
 //#import "DetailChartPage.h"
-//#import "FxDBManager.h"
+#import "FxDBManager.h"
 
 @implementation NewsWidget
 
@@ -39,14 +39,14 @@
     [super reloadData];
 }
 
-//- (BOOL)isReloadLocalData
-//{
-//    NSArray *datas = [FxDBManager fetchNews:self.columnInfo.ID];
-//    
-//    [self.listData addObjectsFromArray:datas];
-//    
-//    return [super isReloadLocalData];
-//}
+- (BOOL)isReloadLocalData
+{
+    NSArray *datas = [FxDBManager fetchNews:self.columnInfo.ID];
+    
+    [self.listData addObjectsFromArray:datas];
+    
+    return [super isReloadLocalData];
+}
 
 - (void)requestServerOp
 {
