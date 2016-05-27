@@ -23,10 +23,17 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+
+
+    
     [super viewWillAppear:animated];
     [self setNavigationLeft:@"NavigationBackBlack.png"
                         sel:@selector(doBack:)];
     [self setStatusBarStyle:UIStatusBarStyleDefault];
+    //开启ios右滑返回
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.delegate = nil;
+    }
 }
 
 - (void)loadHtml

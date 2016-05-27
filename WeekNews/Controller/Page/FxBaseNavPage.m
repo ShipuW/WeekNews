@@ -17,12 +17,14 @@
 - (void)viewDidLoad
 {
     self.barBackgroudImage = @"NavigationBar";
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
     [self setNavigationBackground];
 }
 

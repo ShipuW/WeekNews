@@ -500,11 +500,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeekNews/Controller/Page/DetailPage.m"
-            timestampString = "486019091.818177"
+            timestampString = "486020185.092835"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "-htmlConvert:"
             landmarkType = "5">
          </BreakpointContent>
