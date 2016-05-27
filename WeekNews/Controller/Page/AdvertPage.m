@@ -142,7 +142,10 @@
     [self setLaucnImage:data];
     [self delayHideAdvert];
 }
-
+- (void)opFailEx:(NSString *)errorMessage opinfo:(NSDictionary *)dictInfo
+{
+    [self delayHideAdvert];
+}
 - (void)setLaucnImage:(NSData *)data
 {
     NSString *fileName = [FxDate stringFromDateYMD:[NSDate date]];

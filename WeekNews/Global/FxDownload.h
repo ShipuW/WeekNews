@@ -1,9 +1,9 @@
 //
 //  FxDownload.h
-//  WeekNews
+//  NewsReader
 //
-//  Created by admin on 16/4/25.
-//  Copyright © 2016年 admin. All rights reserved.
+//  Created by hejinbo on 15/7/22.
+//  Copyright (c) 2015年 MyCos. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

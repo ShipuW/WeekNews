@@ -1,9 +1,9 @@
 //
 //  FxDownload.m
-//  WeekNews
+//  NewsReader
 //
-//  Created by admin on 16/4/25.
-//  Copyright © 2016年 admin. All rights reserved.
+//  Created by hejinbo on 15/7/22.
+//  Copyright (c) 2015年 MyCos. All rights reserved.
 //
 
 #import "FxDownload.h"
@@ -57,7 +57,7 @@
     UIImage *image = nil;
     
     file = [FxGlobal getCacheImage:file];
-    
+
     if ([FxFileUtility isFileExist:file]) {
         image = [UIImage imageWithContentsOfFile:file];
         imageView.image = image;
@@ -103,4 +103,3 @@
 }
 
 @end
-

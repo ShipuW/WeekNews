@@ -21,7 +21,7 @@
     info.digest = [dict objectForKey:@"digest"];
     info.body = [dict objectForKey:@"body"];
     info.ec = [dict objectForKey:@"ec"];
-    info.sourceurl = [dict objectForKey:@"source_url"];
+    info.sourceurl = [dict objectForKey:@"shareLink"];
     
     NSArray *images =[dict objectForKey:@"img"];
     info.images = [ContentImageInfo arrayFromArray:images];
