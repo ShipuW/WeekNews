@@ -45,6 +45,12 @@
     [self showIndicator:errorMessage autoHide:YES afterDelay:YES];
 }
 
+- (void)opFailEx:(NSString *)errorMessage opinfo:(NSDictionary *)dictInfo
+{
+    BASE_ERROR_FUN(errorMessage);
+    [self showIndicator:errorMessage autoHide:YES afterDelay:YES];
+}
+
 - (void)opSuccess:(id)data
 {
     [self hideIndicator];
